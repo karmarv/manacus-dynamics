@@ -1,0 +1,11 @@
+matplotlib>=3.6.1
+exif
+tqdm
+numpy
+pandas
+pillow
+scikit-image
+opencv-python==4.8.1.78
+opencv-contrib-python==4.8.1.78
+boxsdk
+openpyxl
