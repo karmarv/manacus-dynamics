@@ -2,6 +2,11 @@ import os, time
 import pandas as pd
 from boxsdk import OAuth2, Client
 
+"""
+Data file configurations
+"""
+data_dir  = "/mnt/c/workspace/eebio/manacus-dynamics/box_data/PROJECT MANACUS/Camera Traps 1 -- Dec 2021 to Jan 2022" 
+data_file = "Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"
 
 class BoxNavigator():
     def __init__(self, home_dir):
@@ -38,15 +43,26 @@ def filter_metadata_df(m_df):
     # Filter criteria for processing
     fv_df = m_df[m_df["FemVisitation"].isin([1, 2]) | m_df["Copulation"].isin([0])]
     print(fv_df)
+    return fv_df
+
+def is_available(x):
+    file_path = os.path.join(data_dir, x["Lek"], x["Pista"], x["DateRange_Folder"], x["FileName"])
+    if os.path.isfile(file_path):
+        return pd.Series([True, file_path])
+    else:
+        return pd.Series([False, file_path])
+
+def verify_available(df):
+    #lambda x: np.square(x) if x.name in ['x', 'y'] else x
+    df[["is_available", "local_path"]] = df.apply(is_available, axis=1)
+    print("Verify file availability:\n", df)
+    return df
 
 if __name__ == "__main__":
-    #os.path.join(".", "videos")
-    data_dir  = "/mnt/c/workspace/eebio/manacus-dynamics/box_data/PROJECT MANACUS/Camera Traps 1 -- Dec 2021 to Jan 2022" 
-    data_file = "Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"
-
     # Read metadata from file 
     m_df = read_metadata_file(data_file)
-    filter_metadata_df(m_df)
+    f_df = verify_available(filter_metadata_df(m_df))
+    f_df.to_csv("local_available.csv", index_label='Index')
     
     # Correct the filenames workflow (Spanish to English mapping)
 
