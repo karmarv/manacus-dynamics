@@ -31,3 +31,10 @@ conda activate mana
 pip install -r requirements.txt
 
 ```
+
+### Dataset Preparation
+- Download the ["Camera Traps 1 -- Dec 2021 to Jan 2022" >> "Lek 6" dataset](https://tulane.box.com/s/s5qp63p418h7nz4i3tbmcmch6lq2glnx) to a local folder
+    - Metadata for the above videos can be found in ["./dataset/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"](./dataset/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx)
+    - Verify the video path with [./dataset/locate_dataset.py](./dataset/locate_dataset.py)
+        - Creates an output file with video availability 
+        - 

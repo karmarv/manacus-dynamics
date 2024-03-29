@@ -39,14 +39,8 @@ def read_metadata_file(data_file):
     print(df.describe())
     return df
 
-def filter_metadata_df(m_df):
-    # Filter criteria for processing
-    fv_df = m_df[m_df["FemVisitation"].isin([1, 2]) | m_df["Copulation"].isin([0])]
-    print(fv_df)
-    return fv_df
-
 def is_available(x):
-    file_path = os.path.join(data_dir, x["Lek"], x["Pista"], x["DateRange_Folder"], x["FileName"])
+    file_path = os.path.join(data_dir, str(x["Lek"]), str(x["Pista"]), str(x["DateRange_Folder"]), str(x["FileName"]))
     if os.path.isfile(file_path):
         return pd.Series([True, file_path])
     else:
@@ -55,14 +49,26 @@ def is_available(x):
 def verify_available(df):
     #lambda x: np.square(x) if x.name in ['x', 'y'] else x
     df[["is_available", "local_path"]] = df.apply(is_available, axis=1)
-    print("Verify file availability:\n", df)
     return df
 
+def filter_metadata_df(m_df):
+    # A. female visitation or courtship success
+    fv_df = m_df[m_df["FemVisitation"].isin([1, 2]) | m_df["courtshipSuccess"].isin([0,1,2])]
+    # B. Local video file is available
+    fv_df = fv_df[fv_df["is_available"] == True]
+    print(fv_df)
+    return fv_df
+
+#def save_video_df(f_df):
+#    file_path = os.path.join(data_dir, str(x["Lek"]), str(x["Pista"]), str(x["DateRange_Folder"]), str(x["FileName"]))
+
+
 if __name__ == "__main__":
-    # Read metadata from file 
-    m_df = read_metadata_file(data_file)
-    f_df = verify_available(filter_metadata_df(m_df))
-    f_df.to_csv("local_available.csv", index_label='Index')
+    # Availability of video as per metadata from file 
+    m_df = verify_available(read_metadata_file(data_file))
+    f_df = filter_metadata_df(m_df)
+    print("Filtered available video file:\n", f_df)
+    f_df.to_csv("local_available.csv", index_label='Index')    
     
     # Correct the filenames workflow (Spanish to English mapping)
 
