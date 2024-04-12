@@ -162,6 +162,8 @@ cython_debug/
 # Dataset and Labels
 dataset/box_credentials.pass
 dataset/videos/*.mp4
+dataset/videos/*.MP4
 dataset/videos/*.avi
+dataset/videos/*.AVI
 dataset/frames/*.jpeg
-dataset/ground_truth_v1/
+

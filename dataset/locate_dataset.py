@@ -23,14 +23,22 @@ class BoxNavigator():
         self.auth = OAuth2(client_id=self.client_id, client_secret=self.client_secret, access_token=self.access_token)
         self.client = Client(self.auth)
 
-def read_metadata_file(data_file):
-    xls = pd.ExcelFile(data_file)
-    # Read first sheet in excel
-    df = pd.read_excel(data_file, sheet_name=xls.sheet_names[0])
-    # Snaps	quietSnaps	Grunts	Rolls	Calls	FemVisitation	courtshipSuccess	Copulation	JuvPresent	Gardening	vidLength
-    #df = df.astype({'FemVisitation': 'str', 'Copulation': 'str'})
-    # Read content
-    print(xls.sheet_names)
+"""
+Read the human labeled provided metadata file
+Headers:
+  - Folder,Lek,Pista,DateRange,DateRange_Folder,FileName,Male,PresentYN,DisplayYN,
+  - Snaps,quietSnaps,Grunts,Rolls,Calls,FemVisitation,courtshipSuccess,Copulation,JuvPresent,Gardening,vidLength,Notes,Observer,
+"""
+def read_metadata_file(data_file, is_excel=False):
+    if is_excel:
+        xls = pd.ExcelFile(data_file)
+        # Read first sheet in excel
+        df = pd.read_excel(data_file, sheet_name=xls.sheet_names[0])
+        #df = df.astype({'FemVisitation': 'str', 'Copulation': 'str'})
+        print(xls.sheet_names) # Read other sheets in document
+    else:
+        # read CSV keeping encoding - https://stackoverflow.com/questions/18171739/unicodedecodeerror-when-reading-csv-file-in-pandas
+        df = pd.read_csv(data_file, encoding = "ISO-8859-1")
     print(df.describe())
     return df
 
@@ -79,7 +87,7 @@ if __name__ == "__main__":
 
     # Data file configurations
     data_dir  = "/mnt/c/workspace/eebio/manacus-dynamics/box_data/PROJECT MANACUS/Camera Traps 1 -- Dec 2021 to Jan 2022" 
-    data_file = "./spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"
+    data_file = "./spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.csv"
     
     # Availability of video as per metadata from file 
     m_df = verify_available(read_metadata_file(data_file))
