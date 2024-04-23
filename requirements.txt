@@ -3,9 +3,9 @@ tqdm
 boxsdk
 openpyxl
 ffmpeg-python
-pandas==2.0.3
-scipy==1.10.1
-scikit-image==0.21.0
+pandas==2.2.2
+scikit-image==0.22.0
+scikit-learn==1.4.2
 opencv-python==4.9.0.80
 opencv-python-headless==4.9.0.80
 matplotlib>=3.6.1

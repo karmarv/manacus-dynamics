@@ -21,7 +21,7 @@ Camera Trap video processing for Manacus dynamics assessment
         - frame by frame position (bounding box) for male and female
 
 
-##### Environment Setup
+#### Environment Setup
 
 - Python 3.8.18 Installation
   - Instructions via Miniconda v23.1.0 - https://docs.conda.io/projects/miniconda/en/latest/
@@ -35,13 +35,5 @@ Camera Trap video processing for Manacus dynamics assessment
   - Clone the current codebase - `git clone https://github.com/karmarv/manacus-dynamics.git && cd manacus-dynamics`
   - Install pre-requisite packages in the activated python virtual environment using - `pip install -r requirements.txt`
 
-
-### Dataset Preparation
-- Download the ["Camera Traps 1 -- Dec 2021 to Jan 2022" >> "Lek 6" dataset](https://tulane.box.com/s/s5qp63p418h7nz4i3tbmcmch6lq2glnx) to a local folder
-    - Metadata for the above videos can be found in ["./dataset/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"](./dataset/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx)
-    - Verify the video path with [./dataset/locate_dataset.py](./dataset/locate_dataset.py)
-        - Creates a filtered file with video availability information
-        - Output selected videos to "dataset/videos"
-- Extract frames 
-    - ffmpeg -i "Lek 6-Pista 1-1.7.22-1.15.22 (incorrect dates on camera)-1.7.22-1.15.22_0047.MP4" -vf "fps=1" frame%04d.png
-    - Using [./sample_dataset.py](./sample_dataset.py) based on data sampled in "dataset/videos" with output to "dataset/frames"
+#### Dataset
+- Refer [./dataset/DATASET.md](./dataset/DATASET.md)
