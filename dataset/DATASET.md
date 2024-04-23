@@ -5,7 +5,7 @@
 
 
 
-### FCAT Dataset Preparation
+### FCAT Dataset Preparation [TODO]
 - ![alt text](./fcat/fcat-images-manacus-ctraps.png)
 - Download the ["Camera Traps 1 -- Dec 2021 to Jan 2022" >> "Lek 6" dataset](https://tulane.box.com/s/s5qp63p418h7nz4i3tbmcmch6lq2glnx) to a local folder
     - Metadata for the above videos can be found in ["./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"](./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx)
@@ -22,4 +22,8 @@
 - ![alt text](./ebird/ebird-images-manacus-library.png)
 - Download the `Manacus manacus` images dataset from https://support.ebird.org/en/support/solutions/articles/48000838205-download-ebird-data 
 - Credit the dataset as per provided guidance at https://support.ebird.org/en/support/solutions/articles/48001064570-crediting-media
-- Split the images data for model train, val, test using [./ebird/split_dataset.py](./ebird/split_dataset.py)
+- Split the images data for model train, val, test using [./ebird/dataset_split.py](./ebird/dataset_split.py)
+- Cocofy the dataset for an initial label with fixed bounding box that can leter be adjusted [./ebird/dataset_cocofy.py](./ebird/dataset_cocofy.py)
+- Visualize this dataset using standalone FiftyOne app [./ebird/dataset_visualize.py](./ebird/dataset_visualize.py)
+    - ![alt text](./ebird/ebird-dataset-visualize-fiftyone.png)
+- Annotate this dataset in CVAT and export labels for training [TODO]
