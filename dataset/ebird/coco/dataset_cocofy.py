@@ -19,9 +19,9 @@ import datetime
 
 # Defect group labels for deliverable 1A
 MANACUS_CLASS_LABELS={
-        "Male"      : { "id": 0 , "group": "manacus" }, 
-        "Female"    : { "id": 1 , "group": "manacus" },
-        "Unknown"   : { "id": 2 , "group": "manacus"  }
+        "Male"      : { "id": 1 , "group": "manacus" }, 
+        "Female"    : { "id": 2 , "group": "manacus" },
+        "Unknown"   : { "id": 3 , "group": "manacus"  }
 }
 
 
@@ -48,7 +48,7 @@ def create_image_info(image_id, file_name, image_size,
                       date_captured=datetime.datetime.now(datetime.timezone.utc).isoformat(" "), 
                       license_id=1, coco_url="", flickr_url=""):
     image_info = {
-        "id"            : image_id,
+        "id"            : int(image_id),
         "file_name"     : file_name,
         "width"         : image_size[0],
         "height"        : image_size[1],
@@ -62,9 +62,9 @@ def create_image_info(image_id, file_name, image_size,
 
 def create_annotation_info(annotation_id, image_id, category_id, area, bounding_box, track_id):
     annotation_info = {
-        "id"            : annotation_id,
-        "image_id"      : image_id,
-        "category_id"   : category_id,   # defect label
+        "id"            : int(annotation_id),
+        "image_id"      : int(image_id),
+        "category_id"   : int(category_id),   # defect label
         "iscrowd"       : 0,
         "area"          : area,          # float
         "bbox"          : bounding_box,  # [x,y,width,height]
@@ -141,35 +141,15 @@ def parse_annotations(df, image_out=None):
     print("Images-{}/Annotations-{} loaded".format(len(gts_coco_labels["images"]), len(gts_coco_labels["annotations"])))
     return gts_coco_labels
 
-def prepare_train_data():
-    image_df = read_metadata_file("./train_images.csv")
-    ann_dict = get_coco_metadata("train")  
+def prepare_coco_data():
+    image_df = read_metadata_file("./images_all.csv")
+    ann_dict = get_coco_metadata("ALL")  
     # organize files in coco dataset format
-    coco_labels = parse_annotations(image_df, image_out="coco/train/images")
+    coco_labels = parse_annotations(image_df, image_out="coco/images")
     ann_dict["images"]      = ann_dict["images"]      + coco_labels["images"]
     ann_dict["annotations"] = ann_dict["annotations"] + coco_labels["annotations"] 
-    write_json_file(os.path.join("coco", 'annotations', 'train.json'), ann_dict)
-
-def prepare_val_data():
-    image_df = read_metadata_file("./val_images.csv")
-    ann_dict = get_coco_metadata("val")  
-    # organize files in coco dataset format
-    coco_labels = parse_annotations(image_df, image_out="coco/val/images")
-    ann_dict["images"]      = ann_dict["images"]      + coco_labels["images"]
-    ann_dict["annotations"] = ann_dict["annotations"] + coco_labels["annotations"] 
-    write_json_file(os.path.join("coco", 'annotations', 'val.json'), ann_dict)
-
-def prepare_test_data():
-    image_df = read_metadata_file("./test_images.csv")
-    ann_dict = get_coco_metadata("test")  
-    # organize files in coco dataset format
-    coco_labels = parse_annotations(image_df, image_out="coco/test/images")
-    ann_dict["images"]      = ann_dict["images"]      + coco_labels["images"]
-    ann_dict["annotations"] = ann_dict["annotations"] + coco_labels["annotations"] 
-    write_json_file(os.path.join("coco", 'annotations', 'test.json'), ann_dict)
+    write_json_file(os.path.join("coco", 'annotations', 'all_images.json'), ann_dict)
 
 if __name__ == "__main__":
     # annotations and images
-    prepare_test_data()
-    prepare_train_data()
-    prepare_val_data()
+    prepare_coco_data()

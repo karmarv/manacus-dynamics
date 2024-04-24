@@ -22,8 +22,12 @@
 - ![alt text](./ebird/ebird-images-manacus-library.png)
 - Download the `Manacus manacus` images dataset from https://support.ebird.org/en/support/solutions/articles/48000838205-download-ebird-data 
 - Credit the dataset as per provided guidance at https://support.ebird.org/en/support/solutions/articles/48001064570-crediting-media
-- Split the images data for model train, val, test using [./ebird/dataset_split.py](./ebird/dataset_split.py)
+- Split the images data for model train, val, test using [./ebird/dataset_split.py](./ebird/dataset_split.py) [`Deprecated`]
 - Cocofy the dataset for an initial label with fixed bounding box that can leter be adjusted [./ebird/dataset_cocofy.py](./ebird/dataset_cocofy.py)
 - Visualize this dataset using standalone FiftyOne app [./ebird/dataset_visualize.py](./ebird/dataset_visualize.py)
     - ![alt text](./ebird/ebird-dataset-visualize-fiftyone.png)
-- Annotate this dataset in CVAT and export labels for training [TODO]
+- Annotate this dataset in CVAT and export labels for training 
+    - Import the cocofied labels into CVAT upon creating task with 3352 images
+    - ![alt text](./ebird/ebird-dataset-annotate-cvat.png)
+    - [TODO] fix the labels
+    - [TODO] split the train, val, test sets
