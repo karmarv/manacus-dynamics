@@ -2,6 +2,7 @@
 import os
 import fiftyone as fo
 import fiftyone.zoo as foz
+from pathlib import Path
 
 
 """
@@ -17,9 +18,9 @@ export FIFTYONE_ANNOTATION_DEFAULT_BACKEND=cvat
 
 """
 
-#Load data into FiftyOne
-
-dataset_dir="/home/rahul/workspace/eeb/manacus-project/data-ebird-manacus/coco/"
+# Load COCO data into FiftyOne
+# "/home/rahul/workspace/eeb/manacus-project/data-ebird-manacus/coco/"
+dataset_dir=  Path().resolve() / "coco" 
 name = "test_coco_sample_visualization2"
 # The splits to load
 splits = ["train", "val", "test"]
@@ -41,17 +42,10 @@ print(dataset.head())
 # Visualize
 session = fo.launch_app(dataset, remote=True, address="0.0.0.0", port=8085)
 
-
-
 selected_view = dataset.view()
 # Send the samples to CVAT for annotation
-anno_key = "anno_run_1"
-selected_view.annotate(
-    anno_key,
-    launch_editor=True,
-    classes=["Male","Female","Unknown"],
-    label_type="detections",
-    )
+#anno_key = "anno_run_1"
+#selected_view.annotate(anno_key, launch_editor=True, classes=["Male","Female","Unknown"], label_type="detections", )
 # Annotate in CVAT-
 # Load annotations back into dataset
 #selected_view.load_annotations(anno_key)

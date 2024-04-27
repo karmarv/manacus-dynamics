@@ -6,18 +6,15 @@ Manacus Recognition Data transformation script
 
 """
 
-import csv
 import json
-import time
 import shutil
-import zipfile
 import os, glob
 import cv2 as cv
 import pandas as pd
 import datetime
 
 
-# Defect group labels for deliverable 1A
+# labels for Manacus 
 MANACUS_CLASS_LABELS={
         "Male"      : { "id": 1 , "group": "manacus" }, 
         "Female"    : { "id": 2 , "group": "manacus" },
@@ -114,7 +111,7 @@ def write_json_file(filename, data):
     with open(filename, 'w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False, indent=4, sort_keys = False)
 
-def parse_annotations(df, image_out=None):
+def pseudo_annotations(df, image_out=None):
     gts_coco_labels = {"images":[], "annotations":[]}
     for index, row in df.iterrows():
         image_idx = str(row['idx_col'])
@@ -145,11 +142,114 @@ def prepare_coco_data():
     image_df = read_metadata_file("./images_all.csv")
     ann_dict = get_coco_metadata("ALL")  
     # organize files in coco dataset format
-    coco_labels = parse_annotations(image_df, image_out="coco/images")
+    coco_labels = pseudo_annotations(image_df, image_out="coco/images")
     ann_dict["images"]      = ann_dict["images"]      + coco_labels["images"]
     ann_dict["annotations"] = ann_dict["annotations"] + coco_labels["annotations"] 
     write_json_file(os.path.join("coco", 'annotations', 'all_images.json'), ann_dict)
 
+
+# 
+
+import json
+import funcy
+from sklearn.model_selection import train_test_split
+#from skmultilearn.model_selection import iterative_train_test_split
+from skmultilearn.model_selection.iterative_stratification import iterative_train_test_split
+import numpy as np
+
+
+def save_coco(file, info, licenses, images, annotations, categories):
+    with open(file, 'wt', encoding='UTF-8') as coco:
+        json.dump({ 'info': info, 'licenses': licenses, 'images': images, 
+            'annotations': annotations, 'categories': categories}, coco, indent=2, sort_keys=True)
+
+def filter_annotations(annotations, images):
+    image_ids = funcy.lmap(lambda i: int(i['id']), images)
+    return funcy.lfilter(lambda a: int(a['image_id']) in image_ids, annotations)
+
+
+def filter_images(images, annotations):
+    annotation_ids = funcy.lmap(lambda i: int(i['image_id']), annotations)
+    return funcy.lfilter(lambda a: int(a['id']) in annotation_ids, images)
+
+def histogram(annotations):
+    annotation_categories = [ int(a['category_id']) for a in annotations]
+    unique, counts = np.unique(annotation_categories, return_counts=True)
+    print(np.asarray((unique, counts)).T)
+    return
+
+def copy_images(images, data_type):
+    os.makedirs(os.path.join(data_type, "images"), exist_ok=True)
+    for img in images:
+        file_name = img['file_name']
+        shutil.copy(os.path.join("images", file_name), os.path.join(data_type, "images", file_name))
+    print("Copied {} {} images".format(len(images), data_type))
+    return
+
+"""
+Split the coco singular JSON labels into 80:10:10 
+"""
+def split_coco_data(annotation_file):
+    train_path  = "annotations/train.json"
+    val_path    = "annotations/val.json"
+    test_path   = "annotations/test.json"
+    with open(annotation_file, 'rt', encoding='UTF-8') as annotations:
+        coco = json.load(annotations)
+        info = coco['info']
+        licenses = coco['licenses']
+        images = coco['images']
+        annotations = coco['annotations']
+        categories = coco['categories']
+
+        print("Total annotations {}, images {}".format(len(annotations), len(images)))
+
+        images_with_annotations = funcy.lmap(lambda a: int(a['image_id']), annotations)
+        images = funcy.lremove(lambda i: i['id'] not in images_with_annotations, images)
+        annotation_categories = funcy.lmap(lambda a: int(a['category_id']), annotations)
+
+        #bottle neck 1
+        #remove classes that has only one sample, because it can't be split into the training and testing sets
+        annotation_categories =  funcy.lremove(lambda i: annotation_categories.count(i) <=1  , annotation_categories)
+        annotations =  funcy.lremove(lambda i: i['category_id'] not in annotation_categories , annotations)
+
+        # Split train
+        X_train, y_train, X_vt, y_vt = iterative_train_test_split(np.array([annotations]).T,np.array([annotation_categories]).T, test_size = 0.20)
+        train_images = filter_images(images, X_train.reshape(-1))
+        train_annots = filter_annotations(annotations, train_images)
+        save_coco(train_path, info, licenses, train_images, train_annots, categories)
+        copy_images(train_images, "train")
+        histogram(train_annots)
+        print("Saved Train {} entries in {}".format(len(train_annots),train_path))
+        # remove items that were added to training for next split
+        images = funcy.lremove(lambda i: i['id'] in train_images, images)
+        annotations =  funcy.lremove(lambda i: i['category_id'] in train_annots, annotations)
+        print("Remaining annotations for val/test split - annotations {}, images {}".format(len(annotations), len(images)))
+
+        # Split val, test
+        X_val, y_val, X_test, y_test = iterative_train_test_split(X_vt, y_vt, test_size = 0.50)
+        val_images = filter_images(images, X_val.reshape(-1))
+        val_annots = filter_annotations(annotations, val_images)
+        save_coco(val_path, info, licenses, val_images, val_annots, categories)
+        copy_images(val_images, "val")
+        histogram(val_annots)
+        print("Saved Val {} entries in {}".format(len(val_annots),val_path))
+        # remove items that were added to val
+        images = funcy.lremove(lambda i: i['id'] in val_images, images)
+        annotations =  funcy.lremove(lambda i: i['category_id'] in val_annots, annotations)        
+
+        test_images = filter_images(images, X_test.reshape(-1))
+        test_annots = filter_annotations(annotations, test_images)
+        save_coco(test_path, info, licenses, test_images, test_annots, categories)
+        copy_images(test_images, "test")
+        histogram(test_annots)
+        print("Saved Test {} entries in {}".format(len(test_annots),test_path))
+
+
 if __name__ == "__main__":
+    np.random.seed(31415)
+    
     # annotations and images
-    prepare_coco_data()
+    #prepare_coco_data()
+
+    annotation_file="./annotations/cvat_all_v1.json"
+    split_coco_data(annotation_file)

@@ -167,4 +167,5 @@ dataset/**/*.avi
 dataset/**/*.AVI
 dataset/**/*.jpeg
 dataset/**/*.jpg
+dataset/**/*.txt
 

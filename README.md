@@ -2,20 +2,21 @@
 Camera Trap video processing for Manacus dynamics assessment
 
 
-### Sub Tasks [Vision]
+## Tasks [Vision]
 1. **Dataset Preparation**
-    - [ ] Filter human label videos given the metadata sheet using [./dataset/locate_dataset.py](./dataset/locate_dataset.py)
+    - [ ] Extract video frames given the metadata sheet using [./dataset/fcat/locate_dataset.py](./dataset/fcat/locate_dataset.py)
     - [ ] Organize the dataset for bird detection
-    - [ ] Run the videos through Marco's audio processing pipeline
-        - Bird snaps right after flying off or copulation
-    - [ ] Detect motion using image processing aand sample frames with bird in it
-        - optical flow in videos
+      - `Stage 1`: ebird high resolution images in coco format [./dataset/DATASET.md](./dataset/DATASET.md#1-ebird-dataset-preparation)
+      - `Stage 2`: camera trap image sampling [TODO]
+    - [ ] Optical flow or Background subtraction to determine the most likely frames to contain birds for detection
+    - [ ] Run the videos through Marco's audio processing pipeline for likely frames (eg: Bird snaps right after flying off or copulation)
 2. **Manacus detection**
-    - [ ] Detect bird/manacus in the video frames - `bird`, `background`
-    - [ ] Detect manacus in image frames (male/female should be present)
+    - [ ] Detect bird/manacus in the video frames - `bird`, `background` [Deprecated]
+    - [ ] `Stage 1` model to detect manacus in image frames (male/female should be present)
         - male (white chest, black wings) [only male displays aand makes snap noise]
         - female (green) [low representation, camouflages with the foliage]
-        - juvenile (between male and female) [male bird can be practicing infront of juveniles ]
+        - unknown (juvenile: between male and female) [male bird can be practicing infront of juveniles ]
+    - [ ] `Stage 2` model trained via transfer learning on camera trap manacus dataset
 3. **Dynamics**
     - [ ] Estimate copulation/visitation in the video based on heuristics
         - frame by frame position (bounding box) for male and female
@@ -37,3 +38,6 @@ Camera Trap video processing for Manacus dynamics assessment
 
 #### Dataset
 - Refer [./dataset/DATASET.md](./dataset/DATASET.md)
+
+#### Model
+- Refer [./model/MODEL.md](./model/MODEL.md)

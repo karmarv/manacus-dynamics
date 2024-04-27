@@ -64,7 +64,7 @@ def convert_images(data_dir, glob_ext='*.png'):
         print(filepath, "\t", filepath_new) 
         cv2.imwrite(filepath_new, image)
 
-def split_dataset(df):
+def split_csv_dataset(df):
     X, y = df["local_path"], df["sex"]
     X_train, X_vt, y_train, y_vt = train_test_split(X, y, train_size=0.8, random_state=0, shuffle=True, stratify=y)
     print("Train split - 80%")
@@ -82,7 +82,7 @@ def split_dataset(df):
     test_df.to_csv("test_images.csv", index=False)
     return (X_train, y_train),  (X_val, y_val), (X_test, y_test)
 
-def verify_split_dataset(data_file):
+def verify_split_csv_dataset(data_file):
     # Availability of video as per metadata from file 
     m_df = verify_available(read_metadata_file(data_file))
     print("Sex - ", m_df["sex"].unique())
@@ -90,7 +90,7 @@ def verify_split_dataset(data_file):
     print(m_df.head())
 
     # Split the dataset
-    split_dataset(m_df[["ML Catalog Number", "Age/Sex", "age", "sex", "is_available", "local_path"]])
+    split_csv_dataset(m_df[["ML Catalog Number", "Age/Sex", "age", "sex", "is_available", "local_path"]])
 
 
 
@@ -105,11 +105,11 @@ if __name__ == "__main__":
     # Data file configurations
     data_file = "./ML__2024-04-12T18-59_whbman1_photo.csv"
     
-    # Convert all the images to JPG type
+    # Step 1: Convert all the images to JPG type
     #convert_images("/home/rahul/workspace/eeb/manacus-project/data-ebird-manacus/images")
 
-    # Split dataset as train=80, val=10, test=10 keeping sex distribution similar
-    verify_split_dataset(data_file)
+    # Step 2: Split dataset as train=80, val=10, test=10 keeping sex distribution similar
+    verify_split_csv_dataset(data_file)
 
 
 
