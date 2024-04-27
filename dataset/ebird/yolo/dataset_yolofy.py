@@ -1,6 +1,6 @@
 import json
 import shutil
-import os, glob
+import os, csv
 import numpy as np
 import contextlib
 from pathlib import Path
@@ -78,14 +78,25 @@ def convert_yolov7(json_file, data_type, use_segments=False):
     
     return
 
+"""
+Write list to file or append if it exists
+"""
+def write_list_file(filename, rows, delimiter=','):
+    os.makedirs(os.path.dirname(filename), exist_ok=True)
+    with open(filename, "a+") as my_csv:
+        csvw = csv.writer(my_csv, delimiter=delimiter)
+        csvw.writerows(rows)
+
 def copy_images(src_folder, data_type):
     fn = Path().resolve() / "images" / data_type      # target folder
     fn.mkdir(parents=True, exist_ok=True)
-
+    images_list = []
     src_folder = Path(src_folder)
     for item in tqdm(src_folder.iterdir()):
         out = fn / os.path.basename(item)
         shutil.copy(item, out)
+        images_list.append([str(out)])
+    write_list_file(Path().resolve() / "images" / "{}.txt".format(data_type), images_list)
     return
 
 def min_index(arr1, arr2):
