@@ -21,33 +21,33 @@
         - Keeping the category labels balanced 
         ```bash
         $python dataset_cocofy.py
-        Total annotations 3356, images 3352
-        Copied 2685 train images
-            [[   1  368]
-            [   2  162]
-            [   3 2159]]
-        Saved Train 2689 entries in annotations/train.json
-        Remaining annotations for val/test split - annotations 3356, images 3352
-        Copied 335 val images
-            [[  1  92]
-            [  2  24]
-            [  3 222]]
-        Saved Val 338 entries in annotations/val.json
-        Copied 336 test images
-            [[  1  93]
-            [  2  37]
-            [  3 209]]
-        Saved Test 339 entries in annotations/test.json
+        Total annotations 3372, images 3352
+        Copied 2689 train images
+        [[   1 1881]
+        [   2  788]
+        [   3   40]]
+        Saved Train 2709 entries in annotations/train.json
+        Remaining annotations for val/test split - annotations 3372, images 3352
+        Copied 337 val images
+        [[  1 238]
+        [  2  99]
+        [  3   5]]
+        Saved Val 342 entries in annotations/val.json
+        Copied 337 test images
+        [[  1 234]
+        [  2 105]
+        [  3   6]]
+        Saved Test 345 entries in annotations/test.json
         ```
     - Convert COCO to Yolo using [./ebird/yolo/dataset_yolofy.py](./ebird/yolo/dataset_yolofy.py)
         ```bash
         $python dataset_yolofy.py
-        Annotations ../coco/annotations/train.json: 100%|███████████████████████████████████| 2685/2685 [00:00<00:00, 34196.23it/s]
-        2685it [00:01, 1350.74it/s]
-        Annotations ../coco/annotations/val.json:   100%|███████████████████████████████████| 335/335 [00:00<00:00, 42962.60it/s]
-        335it [00:00, 1344.29it/s]
-        Annotations ../coco/annotations/test.json:  100%|███████████████████████████████████| 336/336 [00:00<00:00, 41519.20it/s]
-        336it [00:00, 1422.88it/s]
+        Annotations ../coco/annotations/train.json: 100%|████████████| 2689/2689 [00:00<00:00, 44302.32it/s]
+        2689it [00:01, 1344.84it/s]
+        Annotations ../coco/annotations/val.json: 100%|██████████████| 337/337 [00:00<00:00, 44703.52it/s]
+        337it [00:00, 1292.67it/s]
+        Annotations ../coco/annotations/test.json: 100%|█████████████| 337/337 [00:00<00:00, 42917.27it/s]
+        337it [00:00, 1362.18it/s]
         ``` 
 
 ---

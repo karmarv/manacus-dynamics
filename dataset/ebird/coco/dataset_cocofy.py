@@ -75,7 +75,7 @@ def get_coco_metadata(dataset_type="train"):
     coco_output = {}
     coco_output["info"] = {
         "description": "eBird Manacus Dataset - {}".format(dataset_type),
-        "url": "https://github.com/karmarv",
+        "url": "https://github.com/karmarv/manacus-dynamics",
         "version": "0.1.0",
         "year": 2024,
         "contributor": "Rahul Vishwakarma",
@@ -251,5 +251,6 @@ if __name__ == "__main__":
     # annotations and images
     #prepare_coco_data()
 
-    annotation_file="./annotations/cvat_all_v1.json"
+    #annotation_file="./annotations/cvat_all_v1.json"
+    annotation_file="./annotations/cvat_all_sme_v2.json"
     split_coco_data(annotation_file)
