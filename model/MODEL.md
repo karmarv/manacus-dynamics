@@ -32,14 +32,22 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
      Female         337          99       0.979        0.96       0.979       0.786
     Unknown         337           5           1           0      0.0382      0.0143
     ```
-- SME labeled dataset based model with added albumentation, multiscale and cutouts strategies.
-```bash
-python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
-```
+- SME labeled dataset based model with added albumentation and cutouts strategies.
 ```log
 
 ```
 
+- SME labeled dataset based model with added multiscale to previous augmentations.
+```bash
+python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
+```
+
+
+##### Inference 
+- Given a video file report the detections in frames
+  ```bash
+  python detect.py --weights runs/train/r2-ebird-sme/weights/best.pt --conf 0.55 --img-size 640 --save-txt --save-conf --source "../../../data-fcat-sample-trap-videos/copulation-1.mp4"
+  ```
 
 ### (2.) Yolov7 - `Stage 2` Transfer learning camera trap manacus detection model
 
