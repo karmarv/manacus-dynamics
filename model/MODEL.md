@@ -25,6 +25,7 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
     Unknown         335         222       0.644           1       0.684       0.669
     ```
 - SME labeled dataset based model evaluated on test set. 300 training epochs completed in 9.379 hours.
+  - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.jpg](../dataset/ebird/samples/test/test_batch2_pred.jpg)
     ```log
       Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:
         all         337         342       0.991       0.652       0.671       0.551
@@ -33,15 +34,17 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
     Unknown         337           5           1           0      0.0382      0.0143
     ```
 - SME labeled dataset based model with added albumentation and cutouts strategies.
-```log
+  ```log
+  # In-progress
+  ```
 
-```
-
-- SME labeled dataset based model with added multiscale to previous augmentations.
-```bash
-python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
-```
-
+- SME labeled dataset based model with added multiscale to previous augmentations. Needs a bigger GPU to compute.
+  ```bash
+  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
+  ```
+  ```log
+  # TODO
+  ```
 
 ##### Inference 
 - Given a video file report the detections in frames
