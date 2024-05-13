@@ -362,7 +362,7 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
         self.mosaic_border = [-img_size // 2, -img_size // 2]
         self.stride = stride
         self.path = path        
-        #self.albumentations = Albumentations() if augment else None
+        self.albumentations = Albumentations() if augment else None
 
         try:
             f = []  # image files
@@ -578,14 +578,14 @@ class LoadImagesAndLabels(Dataset):  # for training/testing
                                                  perspective=hyp['perspective'])
             
             
-            #img, labels = self.albumentations(img, labels)
+            img, labels = self.albumentations(img, labels)
 
             # Augment colorspace
             augment_hsv(img, hgain=hyp['hsv_h'], sgain=hyp['hsv_s'], vgain=hyp['hsv_v'])
 
             # Apply cutouts
-            # if random.random() < 0.9:
-            #     labels = cutout(img, labels)
+            if random.random() < 0.9:
+                labels = cutout(img, labels)
             
             if random.random() < hyp['paste_in']:
                 sample_labels, sample_images, sample_masks = [], [], [] 
@@ -1231,7 +1231,7 @@ class Albumentations:
             A.ImageCompression(quality_lower=75, p=0.01),],
             bbox_params=A.BboxParams(format='pascal_voc', label_fields=['class_labels']))
 
-            #logging.info(colorstr('albumentations: ') + ', '.join(f'{x}' for x in self.transform.transforms if x.p))
+        logging.info(('albumentations: ') + ', '.join(f'{x}' for x in self.transform.transforms if x.p))
 
     def __call__(self, im, labels, p=1.0):
         if self.transform and random.random() < p:

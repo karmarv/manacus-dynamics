@@ -4,6 +4,7 @@
 - Python environment
     ```
     pip install -r requirements.txt
+    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     ```
 
 ### (1.) Yolov7 - `Stage 1` manacus detection model
@@ -31,6 +32,14 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
      Female         337          99       0.979        0.96       0.979       0.786
     Unknown         337           5           1           0      0.0382      0.0143
     ```
+- SME labeled dataset based model with added albumentation, multiscale and cutouts strategies.
+```bash
+python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
+```
+```log
+
+```
+
 
 ### (2.) Yolov7 - `Stage 2` Transfer learning camera trap manacus detection model
 
