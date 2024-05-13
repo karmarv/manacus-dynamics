@@ -25,7 +25,7 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
     Unknown         335         222       0.644           1       0.684       0.669
     ```
 - SME labeled dataset based model evaluated on test set. 300 training epochs completed in 9.379 hours.
-  - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.jpg](../dataset/ebird/samples/test/test_batch2_pred.jpg)
+  - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.png](../dataset/ebird/samples/test/test_batch2_pred.png)
     ```log
       Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:
         all         337         342       0.991       0.652       0.671       0.551
