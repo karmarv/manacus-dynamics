@@ -3,6 +3,8 @@ tqdm
 boxsdk
 openpyxl
 ffmpeg-python
+tensorboard
+seaborn==0.13.2
 pandas==2.2.2
 scikit-image==0.22.0
 scikit-learn==1.4.2
