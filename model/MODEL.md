@@ -25,7 +25,6 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
     Unknown         335         222       0.644           1       0.684       0.669
     ```
 - SME labeled dataset based model evaluated on test set. 300 training epochs completed in 9.379 hours.
-  - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.png](../dataset/ebird/samples/test/test_batch2_pred.png)
     ```log
       Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:
         all         337         342       0.991       0.652       0.671       0.551
@@ -33,6 +32,7 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
      Female         337          99       0.979        0.96       0.979       0.786
     Unknown         337           5           1           0      0.0382      0.0143
     ```
+  - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.png](../dataset/ebird/samples/test/test_batch2_pred.png)    
 - SME labeled dataset based model with added albumentation and cutouts strategies.
   ```log
   # In-progress
@@ -43,7 +43,11 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
   python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
   ```
   ```log
-  # TODO
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:
+      all         337         342       0.989       0.651       0.661       0.554
+     Male         337         238       0.999       0.983       0.996       0.858
+   Female         337          99        0.97        0.97       0.977       0.797
+  Unknown         337           5           1           0      0.0106      0.0085
   ```
 
 ##### Inference 
