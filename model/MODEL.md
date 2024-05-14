@@ -16,7 +16,7 @@ wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
 # train p5 models
 python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
 ```
-- Initial fake pseudo labels based model evaluated on test set. 300 training epochs completed in 10.434 hours.
+- [r1] Initial fake pseudo labels based model evaluated on test set. 300 training epochs completed in 10.434 hours.
     ```log
       Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 
         all         335         338       0.367       0.687       0.354       0.284
@@ -24,7 +24,7 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
      Female         335          24       0.216       0.583       0.152      0.0658
     Unknown         335         222       0.644           1       0.684       0.669
     ```
-- SME labeled dataset based model evaluated on test set. 300 training epochs completed in 9.379 hours.
+- [r2] SME labeled dataset based model evaluated on test set. 300 training epochs completed in 9.379 hours.
     ```log
       Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95:
         all         337         342       0.991       0.652       0.671       0.551
@@ -33,12 +33,12 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
     Unknown         337           5           1           0      0.0382      0.0143
     ```
   - Sample prediction result @[../dataset/ebird/samples/test/test_batch2_pred.png](../dataset/ebird/samples/test/test_batch2_pred.png)    
-- SME labeled dataset based model with added albumentation and cutouts strategies.
+- [r3] SME labeled dataset based model with added albumentation and cutouts strategies.
   ```log
   # In-progress
   ```
 
-- SME labeled dataset based model with added multiscale to previous augmentations. Needs a bigger GPU to compute.
+- [r4] SME labeled dataset based model with added multiscale to previous augmentations. Needs a bigger GPU to compute.
   ```bash
   python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name yv7-manacus --hyp data/hyp.scratch.p5.yaml
   ```
@@ -49,7 +49,14 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
    Female         337          99        0.97        0.97       0.977       0.797
   Unknown         337           5           1           0      0.0106      0.0085
   ```
-
+- [r5] v7x model with added multiscale. Needs a bigger GPU to compute.
+  ```bash
+  # train p5 models
+  python -m torch.distributed.launch --nproc_per_node 4 --master_port 9527 train.py --workers 8 --device 4,5,6,7 --sync-bn --batch-size 64 --data data/manacus.yaml --img 640 640 --multi-scale --cfg cfg/training/yolov7x-manacus.yaml --weights 'yolov7x.pt' --name yv7x-manacus --hyp data/hyp.scratch.p5.yaml
+  ```
+  ```log
+  ```
+  
 ##### Inference 
 - Given a video file report the detections in frames
   ```bash
