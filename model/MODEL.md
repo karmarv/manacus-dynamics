@@ -8,7 +8,7 @@
     pip install Pillow==9.5.0
     ```
 
-### (1.) Yolov7 - `Stage 1` manacus detection model
+## (1.) Yolov7 - `Stage 1` manacus detection model
 
 Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
 
@@ -65,10 +65,11 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
 ##### Inference 
 - Given a video file report the detections in frames
   ```bash
-  python detect.py --weights runs/train/r2-ebird-sme/weights/best.pt --conf 0.55 --img-size 640 --save-txt --save-conf --source "../../../data-fcat-sample-trap-videos/copulation-1.mp4"
+  python detect.py --weights runs/train/r3-ebird-aug/weights/best.pt --conf 0.55 --img-size 640 --save-txt --save-conf --source "../../../data-fcat-sample-trap-videos/Full-length-clip-5_copulation.MP4"
+  python detect.py --weights runs/train/r3-ebird-aug/weights/best.pt --conf 0.55 --img-size 640 --save-txt --save-conf --source "../../../data-fcat-sample-trap-videos/Full-length-clip-1_female-visitation.MP4"
   ```
 
-### (2.) Yolov9 - `Stage 1` manacus detection model
+##### Yolov9 - `Stage 1` manacus detection model
 
 Training logs on W&B - https://wandb.ai/karmar/Yv9-Manacus
 
@@ -86,3 +87,6 @@ python train_dual.py --workers 8 --device 0 --batch 16 --data data/manacus.yaml 
 
 ## `Stage 2` Transfer learning camera trap manacus detection model
 
+### (.) Dataset Preparation
+
+### (.) Yolov7 - `Stage 2` manacus detection model

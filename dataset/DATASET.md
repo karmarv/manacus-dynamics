@@ -53,14 +53,18 @@
 ---
 
 ### (2.) FCAT Dataset Preparation [TODO]
-- ![alt text](./fcat/fcat-images-manacus-ctraps.png)
-- Download the ["Camera Traps 1 -- Dec 2021 to Jan 2022" >> "Lek 6" dataset](https://tulane.box.com/s/s5qp63p418h7nz4i3tbmcmch6lq2glnx) to a local folder
-    - Metadata for the above videos can be found in ["./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"](./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx)
-    - Verify the video path with [./fcat/locate_dataset.py](./fcat/locate_dataset.py)
-        - Creates a filtered file with video availability information
-        - Output selected videos to "dataset/videos"
-- Extract frames 
-    - ffmpeg -i "Lek 6-Pista 1-1.7.22-1.15.22 (incorrect dates on camera)-1.7.22-1.15.22_0047.MP4" -vf "fps=1" frame%04d.png
-    - Using [../sample_dataset.py](../sample_dataset.py) based on data sampled in "dataset/videos" with output to "dataset/frames"
+- Search the Box folder approach
+    - ![alt text](./fcat/fcat-images-manacus-ctraps.png)
+    - Download the ["Camera Traps 1 -- Dec 2021 to Jan 2022" >> "Lek 6" dataset](https://tulane.box.com/s/s5qp63p418h7nz4i3tbmcmch6lq2glnx) to a local folder
+        - Metadata for the above videos can be found in ["./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx"](./fcat/spreadsheets/Lek-6_Video-Review_Dec21-Jan22_11.07.23.xlsx)
+        - Verify the video path with [./fcat/locate_dataset.py](./fcat/locate_dataset.py)
+            - Creates a filtered file with video availability information
+            - Output selected videos to "dataset/videos"
+    - Extract frames 
+        - ffmpeg -i "Lek 6-Pista 1-1.7.22-1.15.22 (incorrect dates on camera)-1.7.22-1.15.22_0047.MP4" -vf "fps=1" frame%04d.png
+        - Using [../sample_dataset.py](../sample_dataset.py) based on data sampled in "dataset/videos" with output to "dataset/frames"
 
 
+- Curated `FemVisitations` videos from SME
+    - Spreadsheet (Batch 1) - [./fcat/curated/20240613_FemVisitation_samples.csv](./fcat/curated/20240613_FemVisitation_samples.csv)
+    - Sample images (1FPS) with bounding box on objects (>20px) based on optical flow - [Visualization and extraction script]
