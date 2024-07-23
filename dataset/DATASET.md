@@ -61,7 +61,11 @@
             - Creates a filtered file with video availability information
             - Output selected videos to "dataset/videos"
     - Extract frames 
-        - ffmpeg -i "Lek 6-Pista 1-1.7.22-1.15.22 (incorrect dates on camera)-1.7.22-1.15.22_0047.MP4" -vf "fps=1" frame%04d.png
+        - FFMPEG
+            - ffmpeg -i "L6.P4c_12.9.21-12.10.21_X0016.AVI" -vf "fps=1" tmp/frame%06d.png
+            - Directory of videos 
+                - `for i in *.avi; do ffmpeg -i "$i" -vf "fps=1" "${i%.*}/%06d.png"; done`
+                - for i in *.avi; do echo $i; done
         - Using [../sample_dataset.py](../sample_dataset.py) based on data sampled in "dataset/videos" with output to "dataset/frames"
 
 

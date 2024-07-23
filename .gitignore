@@ -169,4 +169,5 @@ dataset/**/*.jpeg
 dataset/**/*.jpg
 dataset/**/*.txt
 dataset/**/*.zip
+dataset/**/*.PNG
 *.cache

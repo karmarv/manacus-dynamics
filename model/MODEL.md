@@ -88,5 +88,70 @@ python train_dual.py --workers 8 --device 0 --batch 16 --data data/manacus.yaml 
 ## `Stage 2` Transfer learning camera trap manacus detection model
 
 ### (.) Dataset Preparation
+- fcat-manacus-v1: Sample 10 videos male/female stationary track labeling
+  - Link: http://vader.ece.ucsb.edu:8080/projects/6?page=1
+  - COCO 1.0 project export format for model evaluation
+- fcat-manacus-v2: TODO
 
 ### (.) Yolov7 - `Stage 2` manacus detection model
+
+Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
+
+> Looks like some issue with data [Learning is not happening]
+
+- [r6-scratch] Initial 10 video sample track labels based model validated on 2 videos. 300 training epochs completed in 10.434 hours.
+  ```bash
+  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+  # train p5 models
+  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'yolov7.pt' --name r6-fcat-init --hyp data/hyp.scratch.p5.yaml
+  ```
+  - No learning happening
+    ```log
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    49/299     14.3G   0.02266  0.002145 0.0008067   0.02561         9       640: 100%|████████████████████████████████████████████| 182/182 [01:26<00:00,  2.10it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 23/23 [00:06<00:00,  3.63it/s]
+      all         726         354      0.0291      0.0196     0.00102    0.000207
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    50/299     14.3G   0.02254  0.002002 0.0006905   0.02524         7       640: 100%|███████████████████████████████████████████| 182/182 [01:28<00:00,  2.06it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 23/23 [00:06<00:00,  3.46it/s]
+      all         726         354      0.0525      0.0196     0.00186     0.00021
+    ```
+  ```bash
+  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
+  # train p5 models
+  python train.py --workers 16 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'yolov7.pt' --name  r6-fcat-init-1280w-v2 --hyp data/hyp.scratch.p5.yaml
+  ```
+  - No learning happening
+    ```log
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    20/299     12.8G   0.02386  0.003066 0.0008518   0.02778         5      1280: 100%|███████████████████████████████████████████| 726/726 [04:08<00:00,  2.92it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 91/91 [00:13<00:00,  6.92it/s]
+      all         726         354      0.0622      0.0196     0.00236    0.000535
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+    21/299     12.8G   0.02408  0.003029  0.000979   0.02809         0      1280: 100%|███████████████████████████████████████████| 726/726 [04:10<00:00,  2.90it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 91/91 [00:13<00:00,  6.89it/s]
+      all         726         354       0.119      0.0196     0.00516    0.000544
+    ```
+    ```log
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   100/299     13.2G    0.0168    0.0022 0.0004092   0.01941         5      1280: 100%|██████████████████████████████████████████████| 726/726 [05:54<00:00,  2.05it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████| 91/91 [00:17<00:00,  5.09it/s]
+      all         726         354      0.0216      0.0196    0.000765    0.000155
+     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
+   101/299     13.2G   0.01714  0.002182 0.0003572   0.01968         5      1280: 100%|██████████████████████████████████████████████| 726/726 [05:55<00:00,  2.04it/s]
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████| 91/91 [00:17<00:00,  5.08it/s]
+      all         726         354      0.0223      0.0196    0.000784    0.000159
+    ```
+  - [TODO] Attempt with small objects modification
+  ```bash
+  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat-so.yaml --weights 'yolov7.pt' --name  r6-fcat-so-1280w-v3 --hyp data/hyp.scratch.p5.yaml
+  ```
+  - [TODO] Attempt with yolov7-w6 model
+  ```bash
+  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus-fcat.yaml --weights 'yolov7.pt' --name  r6-fcat-w6-1280w-v4 --hyp data/hyp.scratch.p5.yaml
+  ```
+
+- [r7-transfer]
+  ```bash
+  # train p5 models - model/yolov7/runs/train/r3-ebird-aug/weights/best_289.pt
+  python train.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-tx-1280w --hyp data/hyp.scratch.p5.yaml
