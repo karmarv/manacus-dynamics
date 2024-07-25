@@ -1,0 +1,6343 @@
+{
+    "info": {
+        "description": "Manacus COCO Keyframe Dataset - validation",
+        "url": "https://github.com/",
+        "version": "0.2.0",
+        "year": 2024,
+        "contributor": "Rahul Vishwakarma",
+        "date_created": "2024-07-25 17:33:07.339404"
+    },
+    "licenses": [
+        {
+            "id": 1,
+            "name": "[TODO] Attribution-NonCommercial-ShareAlike License",
+            "url": "http://creativecommons.org/licenses/by-nc-sa/2.0/"
+        }
+    ],
+    "categories": [
+        {
+            "id": 1,
+            "name": "Male",
+            "supercategory": "manacus"
+        },
+        {
+            "id": 2,
+            "name": "Female",
+            "supercategory": "manacus"
+        },
+        {
+            "id": 3,
+            "name": "Unknown",
+            "supercategory": "manacus"
+        }
+    ],
+    "images": [
+        {
+            "id": 823,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000000.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 824,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000002.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 825,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000007.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 826,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000008.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 827,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000009.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 828,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000019.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 829,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000032.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 830,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000033.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 831,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000037.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 832,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000038.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 833,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000039.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 834,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000043.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 835,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000044.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 836,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000004.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 837,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000005.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 838,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000006.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 839,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000010.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 840,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000018.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 841,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000023.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 842,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000024.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 843,
+            "file_name": "LM.P5_1.8.22-1.20.22_0029.MP4-00000028.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 844,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000000.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 845,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000004.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 846,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000005.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 847,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000006.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 848,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000012.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 849,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000013.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 850,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000017.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 851,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000022.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 852,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000023.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 853,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000024.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 854,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000025.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 855,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000029.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 856,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000030.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 857,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000031.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 858,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000035.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 859,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000036.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 860,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000037.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 861,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000039.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 862,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000042.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 863,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000043.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 864,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000044.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 865,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000047.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 866,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000048.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 867,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000051.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 868,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000057.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 869,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000058.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 870,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000059.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 871,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000065.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 872,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000066.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 873,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000071.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 874,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000072.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 875,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000073.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 876,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000077.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 877,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000078.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 878,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000079.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 879,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000083.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 880,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000084.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 881,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000085.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 882,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000090.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 883,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000091.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 884,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000093.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 885,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000094.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 886,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000095.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 887,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000096.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 888,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000099.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 889,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000100.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 890,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000104.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 891,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000109.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 892,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000110.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 893,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000111.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 894,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000119.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 895,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000120.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 896,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000125.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 897,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000126.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 898,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000132.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 899,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000133.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 900,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000134.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 901,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000139.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 902,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 903,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000135.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 904,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000143.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 905,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000145.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 906,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000150.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 907,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000151.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 908,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000155.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 909,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000156.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 910,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000166.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 911,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000167.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 912,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000175.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 913,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000176.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 914,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000180.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 915,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000181.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 916,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000182.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 917,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000187.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 918,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000188.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 919,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000189.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 920,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000190.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 921,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000194.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 922,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000195.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 923,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000196.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 924,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000198.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 925,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000201.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 926,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000202.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 927,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000203.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 928,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000204.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 929,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000205.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 930,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000207.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 931,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000208.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 932,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000218.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 933,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000219.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 934,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000220.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 935,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000221.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 936,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000228.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 937,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000229.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 938,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000234.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 939,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000235.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 940,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000237.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 941,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000238.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 942,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000241.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 943,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000242.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 944,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000248.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 945,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000249.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 946,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000250.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 947,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000252.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 948,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000255.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 949,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000256.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 950,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000257.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 951,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000258.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 952,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000259.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 953,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000264.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 954,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000265.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 955,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000268.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 956,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000272.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 957,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000273.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 958,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000266.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 959,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000267.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 960,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000276.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 961,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000280.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 962,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000281.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 963,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000283.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 964,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000286.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 965,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000287.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 966,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000288.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 967,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000290.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 968,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000293.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 969,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000294.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 970,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000296.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 971,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000295.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 972,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000297.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 973,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000301.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 974,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000302.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 975,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000305.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 976,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000306.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 977,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000307.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 978,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000308.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 979,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000309.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 980,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000310.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 981,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000311.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 982,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000312.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 983,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000315.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 984,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000316.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 985,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000318.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 986,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000319.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 987,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000325.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 988,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000326.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 989,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000327.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 990,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000330.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 991,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000338.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 992,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000345.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 993,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000346.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 994,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000348.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 995,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000351.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 996,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000352.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 997,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000355.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 998,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000353.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 999,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000358.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 1000,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000361.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        },
+        {
+            "id": 1001,
+            "file_name": "LM.P4_1.8.22-1.13.22_0127.MP4-00000362.jpg",
+            "width": 1920,
+            "height": 1080,
+            "date_captured": "2024-07-25 17:32:19.036277",
+            "license": 1,
+            "coco_url": "",
+            "flickr_url": ""
+        }
+    ],
+    "annotations": [
+        {
+            "id": 934,
+            "image_id": 823,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 29440.712221871432,
+            "bbox": [
+                135.0657494140687,
+                836.7039538187782,
+                156.4824150599634,
+                188.14070712411922
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 258,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 935,
+            "image_id": 824,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 31848.635355224164,
+            "bbox": [
+                127.80000000000291,
+                836.703125,
+                163.7488281249971,
+                194.49687500000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 258,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 936,
+            "image_id": 825,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7690.912260552458,
+            "bbox": [
+                1847.327088769638,
+                659.41751825951,
+                72.67291123036193,
+                105.82914775731842
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 259,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 937,
+            "image_id": 826,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 9273.484737699622,
+            "bbox": [
+                1787.5859375,
+                654.9000000000015,
+                129.69908447265334,
+                71.50000152587745
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 259,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 938,
+            "image_id": 827,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7724.113002058989,
+            "bbox": [
+                1798.4000000000015,
+                645.85546875,
+                108.02955017089698,
+                71.50000152587745
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 259,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 939,
+            "image_id": 828,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5568.405051746863,
+            "bbox": [
+                1234.9652679858445,
+                620.5230451521202,
+                75.07537832356684,
+                74.1708556931626
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 260,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 940,
+            "image_id": 829,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5568.405051746863,
+            "bbox": [
+                1234.8984375,
+                621.6875,
+                75.07537832356684,
+                74.1708556931626
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 260,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 941,
+            "image_id": 830,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5568.405051746863,
+            "bbox": [
+                1235.869140625,
+                616.90625,
+                75.07537832356684,
+                74.1708556931626
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 260,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 942,
+            "image_id": 831,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 14354.638059491486,
+            "bbox": [
+                1797.5783440973973,
+                441.42756433204704,
+                109.4472382789354,
+                131.1557814086409
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 261,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 943,
+            "image_id": 832,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 16197.09660156225,
+            "bbox": [
+                1812.1000000000022,
+                435.087890625,
+                107.89999999999782,
+                150.11210937500073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 261,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 944,
+            "image_id": 833,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 15925.663416290361,
+            "bbox": [
+                1813.908203125,
+                432.375,
+                106.091796875,
+                150.11210937500073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 261,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 945,
+            "image_id": 834,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 14777.21939135186,
+            "bbox": [
+                1813.908203125,
+                443.2000000000007,
+                106.091796875,
+                139.28710632324146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 261,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 946,
+            "image_id": 835,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 11781.650976562425,
+            "bbox": [
+                1806.7000000000007,
+                478.5,
+                113.29999999999927,
+                103.986328125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 261,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 947,
+            "image_id": 836,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 22759.03843631225,
+            "bbox": [
+                0.0,
+                187.25670518840343,
+                196.57328828156824,
+                115.77889669176511
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 948,
+            "image_id": 837,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 23298.23350225829,
+            "bbox": [
+                0.0,
+                181.8000000000029,
+                196.57328828156824,
+                118.52186889648146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 949,
+            "image_id": 838,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 24182.966272512745,
+            "bbox": [
+                0.0,
+                177.3000000000029,
+                196.57328828156824,
+                123.02264709472365
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 950,
+            "image_id": 827,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 24536.951164407543,
+            "bbox": [
+                0.0,
+                175.5,
+                196.57328828156824,
+                124.82342529296875
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 951,
+            "image_id": 839,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 25598.446921127583,
+            "bbox": [
+                0.0,
+                170.10000000000218,
+                196.57328828156824,
+                130.22342529296657
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 952,
+            "image_id": 840,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 19225.603454589844,
+            "bbox": [
+                0.0,
+                153.0,
+                130.5,
+                147.3226318359375
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 953,
+            "image_id": 828,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 20244.011242676133,
+            "bbox": [
+                0.0,
+                138.5,
+                125.10000000000218,
+                161.8226318359375
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 954,
+            "image_id": 841,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 20244.011242676133,
+            "bbox": [
+                0.0,
+                128.55078125,
+                125.10000000000218,
+                161.8226318359375
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 955,
+            "image_id": 842,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 22997.22742187543,
+            "bbox": [
+                0.0,
+                164.69921875,
+                163.10000000000218,
+                141.00078125000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 956,
+            "image_id": 843,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 22108.922500000524,
+            "bbox": [
+                0.0,
+                164.69921875,
+                156.8000000000029,
+                141.00078125000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 262,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 957,
+            "image_id": 844,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 11683.341777688262,
+            "bbox": [
+                698.5833481560221,
+                503.8396258299508,
+                108.54271564853116,
+                107.63819301812691
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 263,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 958,
+            "image_id": 845,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                249.03515625,
+                184.5,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 264,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 959,
+            "image_id": 846,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7094.6893474613935,
+            "bbox": [
+                249.03515625,
+                186.30078125,
+                96.76484375000291,
+                73.3188735961885
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 264,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 960,
+            "image_id": 847,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7094.6893474613935,
+            "bbox": [
+                248.130859375,
+                184.4921875,
+                96.76484375000291,
+                73.3188735961885
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 264,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 961,
+            "image_id": 845,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 15698.876892876893,
+            "bbox": [
+                1717.0758299914014,
+                633.1863619777832,
+                141.10553034309123,
+                111.25628353974389
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 265,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 962,
+            "image_id": 846,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8689.115744453837,
+            "bbox": [
+                1841.9000000000015,
+                713.689453125,
+                78.09999999999854,
+                111.25628353974389
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 265,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 963,
+            "image_id": 847,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5715.380273437688,
+            "bbox": [
+                1855.5,
+                713.689453125,
+                64.5,
+                88.61054687500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 265,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 964,
+            "image_id": 848,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4121.077908558492,
+            "bbox": [
+                1499.9903986943427,
+                334.6938939443244,
+                66.0301520195244,
+                62.41206149790378
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 266,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 965,
+            "image_id": 849,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4121.077908558492,
+            "bbox": [
+                1509.94140625,
+                333.7890625,
+                66.0301520195244,
+                62.41206149790378
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 266,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 966,
+            "image_id": 850,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4418.661500244476,
+            "bbox": [
+                1509.94140625,
+                333.7890625,
+                81.35859375000291,
+                54.31093750000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 266,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 967,
+            "image_id": 851,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8932.677643453602,
+            "bbox": [
+                1840.9954303568084,
+                758.9150076039987,
+                79.00456964319164,
+                113.06532880055238
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 267,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 968,
+            "image_id": 852,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12399.17119140652,
+            "bbox": [
+                1822.90625,
+                754.390625,
+                92.59375,
+                133.9093750000029
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 267,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 969,
+            "image_id": 853,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12399.17119140652,
+            "bbox": [
+                1825.62109375,
+                763.435546875,
+                92.59375,
+                133.9093750000029
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 267,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 970,
+            "image_id": 854,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10460.309904785092,
+            "bbox": [
+                1840.1000000000022,
+                763.435546875,
+                78.11484374999782,
+                133.9093750000029
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 267,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 971,
+            "image_id": 855,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6119.845693074609,
+            "bbox": [
+                738.3823438938161,
+                555.3974157630037,
+                76.88442358437533,
+                79.59799147558806
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 268,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 972,
+            "image_id": 856,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6498.949475210618,
+            "bbox": [
+                738.3828125,
+                557.3000000000029,
+                98.6171875,
+                65.90077896117873
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 268,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 973,
+            "image_id": 857,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6232.529205322266,
+            "bbox": [
+                738.3828125,
+                557.30078125,
+                98.6171875,
+                63.19921875
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 268,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 974,
+            "image_id": 858,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 10358.219617743422,
+            "bbox": [
+                724.4000000000015,
+                258.220703125,
+                103.0880981445298,
+                100.47929687500073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 269,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 975,
+            "image_id": 859,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7996.995237587006,
+            "bbox": [
+                747.9000000000015,
+                258.220703125,
+                79.58848724365089,
+                100.47929687500073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 269,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 976,
+            "image_id": 860,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 8426.773068702836,
+            "bbox": [
+                747.900390625,
+                258.220703125,
+                79.58848724365089,
+                105.87929687500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 269,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 977,
+            "image_id": 859,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6562.542073514075,
+            "bbox": [
+                1469.236328125,
+                349.2000000000007,
+                96.78392145327234,
+                67.80611877441333
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 270,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 978,
+            "image_id": 860,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4781.704339898839,
+            "bbox": [
+                1495.5,
+                349.19921875,
+                70.52024841308594,
+                67.80611877441333
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 270,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 979,
+            "image_id": 861,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5974.903377181122,
+            "bbox": [
+                1509.1000000000022,
+                353.720703125,
+                76.81868591308375,
+                77.779296875
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 270,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 980,
+            "image_id": 862,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8415.89346988042,
+            "bbox": [
+                1825.619140625,
+                824.0,
+                87.7386951492299,
+                95.91997528076172
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 271,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 981,
+            "image_id": 863,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7908.925117187999,
+            "bbox": [
+                1793.099609375,
+                852.0,
+                123.00039062500218,
+                64.30000000000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 271,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 982,
+            "image_id": 864,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 9005.480651092808,
+            "bbox": [
+                1789.482421875,
+                847.478515625,
+                127.517578125,
+                70.62148437500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 271,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 983,
+            "image_id": 862,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6410.537026152314,
+            "bbox": [
+                1520.353515625,
+                132.4921875,
+                93.16583093165536,
+                68.80781250000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 272,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 984,
+            "image_id": 863,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6410.537026152314,
+            "bbox": [
+                1520.353515625,
+                135.205078125,
+                93.16583093165536,
+                68.80781250000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 272,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 985,
+            "image_id": 865,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12451.595134077832,
+            "bbox": [
+                1354.3622551992303,
+                856.6034516876753,
+                154.6733697991549,
+                80.5025141059923
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 273,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 986,
+            "image_id": 866,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 14136.085357974243,
+            "bbox": [
+                1348.93359375,
+                843.0,
+                154.6733697991549,
+                91.39314270019531
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 273,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 987,
+            "image_id": 867,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3486.2484375000786,
+            "bbox": [
+                1884.0,
+                646.259765625,
+                36.0,
+                96.84023437500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 274,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 988,
+            "image_id": 868,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5845.598158043732,
+            "bbox": [
+                746.08203125,
+                271.7890625,
+                77.81796875000146,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 275,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 989,
+            "image_id": 869,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5845.598158043732,
+            "bbox": [
+                751.509765625,
+                271.7890625,
+                77.81796875000146,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 275,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 990,
+            "image_id": 870,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6391.88256028609,
+            "bbox": [
+                751.509765625,
+                271.7890625,
+                85.09023437500218,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 275,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 991,
+            "image_id": 871,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3909.9937500000524,
+            "bbox": [
+                1884.0,
+                631.7890625,
+                36.0,
+                108.61093750000146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 276,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 992,
+            "image_id": 872,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3909.9937500000524,
+            "bbox": [
+                1884.0,
+                622.744140625,
+                36.0,
+                108.61093750000146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 276,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 993,
+            "image_id": 871,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7119.927625492041,
+            "bbox": [
+                1496.373046875,
+                232.482421875,
+                102.22695312500218,
+                69.64824254114137
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 277,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 994,
+            "image_id": 872,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4347.927572354666,
+            "bbox": [
+                1493.658203125,
+                227.958984375,
+                62.42695312500291,
+                69.64824254114137
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 277,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 995,
+            "image_id": 873,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5606.410635681518,
+            "bbox": [
+                1556.533203125,
+                70.982421875,
+                96.77109375000146,
+                57.93476562500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 278,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 996,
+            "image_id": 874,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5606.410635681518,
+            "bbox": [
+                1550.201171875,
+                70.982421875,
+                96.77109375000146,
+                57.93476562500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 278,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 997,
+            "image_id": 873,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7632.76835426742,
+            "bbox": [
+                726.623046875,
+                564.4000000000015,
+                100.40201197488932,
+                76.02206573486183
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 279,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 998,
+            "image_id": 874,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8343.685134652025,
+            "bbox": [
+                699.5,
+                582.4000000000015,
+                143.8000030517578,
+                58.022843933104014
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 279,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 999,
+            "image_id": 875,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8343.685134652025,
+            "bbox": [
+                698.595703125,
+                580.58984375,
+                143.8000030517578,
+                58.022843933104014
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 279,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1000,
+            "image_id": 876,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7409.348079807668,
+            "bbox": [
+                737.9000000000015,
+                311.587890625,
+                98.6349731445298,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 280,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1001,
+            "image_id": 877,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7409.348079807668,
+            "bbox": [
+                740.61328125,
+                312.4921875,
+                98.6349731445298,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 280,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1002,
+            "image_id": 877,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6031.48428467221,
+            "bbox": [
+                1822.001953125,
+                796.904296875,
+                87.7386951492299,
+                68.74371991073713
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 281,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1003,
+            "image_id": 878,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6535.144665985389,
+            "bbox": [
+                1836.517578125,
+                772.458984375,
+                76.84064636230323,
+                85.0480178832986
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 281,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1004,
+            "image_id": 879,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 4156.375781249847,
+            "bbox": [
+                1880.4000000000015,
+                662.541015625,
+                39.599999999998545,
+                104.958984375
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 282,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1005,
+            "image_id": 880,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3118.8250160218436,
+            "bbox": [
+                1880.400390625,
+                665.255859375,
+                39.599609375,
+                78.75898437500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 282,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1006,
+            "image_id": 881,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3544.154296875131,
+            "bbox": [
+                1875.0,
+                665.255859375,
+                45.0,
+                78.75898437500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 282,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1007,
+            "image_id": 880,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3401.914223503246,
+            "bbox": [
+                1511.749192889598,
+                357.3069597044341,
+                56.98492571547831,
+                59.698493606691045
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 283,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1008,
+            "image_id": 881,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3401.914223503246,
+            "bbox": [
+                1509.939453125,
+                353.6875,
+                56.98492571547831,
+                59.698493606691045
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 283,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1009,
+            "image_id": 882,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4158.62971225592,
+            "bbox": [
+                1509.939453125,
+                353.6875,
+                69.66054687500218,
+                59.698493606691045
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 283,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1010,
+            "image_id": 883,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4427.27293348603,
+            "bbox": [
+                1509.939453125,
+                353.6875,
+                74.16054687500218,
+                59.698493606691045
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 283,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1011,
+            "image_id": 884,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7059.622927246491,
+            "bbox": [
+                1515.830078125,
+                127.96875,
+                125.76992187500218,
+                56.13125000000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 284,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1012,
+            "image_id": 885,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7564.80417724651,
+            "bbox": [
+                1515.830078125,
+                127.96875,
+                134.76992187500218,
+                56.13125000000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 284,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1013,
+            "image_id": 886,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6498.310427246469,
+            "bbox": [
+                1515.830078125,
+                127.96875,
+                115.76992187500218,
+                56.13125000000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 284,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1014,
+            "image_id": 886,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8795.232780822536,
+            "bbox": [
+                1838.2818624655956,
+                781.5280733641084,
+                77.78894621477957,
+                113.06532880055238
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 285,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1015,
+            "image_id": 887,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 11227.81287553524,
+            "bbox": [
+                1787.6000000000022,
+                831.3000000000029,
+                132.08933868407985,
+                85.00165863036818
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 285,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1016,
+            "image_id": 888,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12101.395568030932,
+            "bbox": [
+                1369.740234375,
+                881.9296875,
+                153.77890625000146,
+                78.69346884518382
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 286,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1017,
+            "image_id": 889,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 15348.226234323974,
+            "bbox": [
+                1362.50390625,
+                856.6000000000022,
+                143.7960937500029,
+                106.73604431152125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 286,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1018,
+            "image_id": 890,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 4037.0570312501004,
+            "bbox": [
+                1874.0,
+                621.837890625,
+                46.0,
+                87.76210937500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 287,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1019,
+            "image_id": 891,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 9507.352933942131,
+            "bbox": [
+                741.599609375,
+                238.3000000000029,
+                109.40567626952907,
+                86.89999694823928
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 288,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1020,
+            "image_id": 892,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 10454.52908796563,
+            "bbox": [
+                730.7000000000007,
+                238.30078125,
+                120.30528717040943,
+                86.89999694823928
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 288,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1021,
+            "image_id": 893,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 10779.259741963258,
+            "bbox": [
+                730.69921875,
+                238.30078125,
+                120.30528717040943,
+                89.59921875000146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 288,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1022,
+            "image_id": 894,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7307.815739377655,
+            "bbox": [
+                1503.6084892159597,
+                232.48283670862293,
+                104.92462512691418,
+                69.64824254114137
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 289,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1023,
+            "image_id": 895,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3403.414874267744,
+            "bbox": [
+                1498.18359375,
+                228.865234375,
+                59.69062500000291,
+                57.017578125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 289,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1024,
+            "image_id": 896,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6861.7725719255395,
+            "bbox": [
+                1547.5,
+                92.693359375,
+                91.34552001953125,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 290,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1025,
+            "image_id": 897,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7712.640507202591,
+            "bbox": [
+                1530.314453125,
+                99.9296875,
+                103.98554687500291,
+                74.17031250000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 290,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1026,
+            "image_id": 897,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 9879.29635613356,
+            "bbox": [
+                697.6788255256179,
+                575.2969136319007,
+                145.62814349511245,
+                67.83919728033288
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 291,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1027,
+            "image_id": 898,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7946.549810627322,
+            "bbox": [
+                732.513671875,
+                311.587890625,
+                105.78632812500291,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 292,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1028,
+            "image_id": 899,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7676.121865680869,
+            "bbox": [
+                732.513671875,
+                311.587890625,
+                102.18632812500073,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 292,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1029,
+            "image_id": 900,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6707.997699274564,
+            "bbox": [
+                745.2000000000007,
+                313.396484375,
+                90.39999847412037,
+                74.20351562500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 292,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1030,
+            "image_id": 901,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7108.754768371791,
+            "bbox": [
+                745.19921875,
+                313.396484375,
+                95.80078125,
+                74.20351562500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 292,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1031,
+            "image_id": 902,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7309.104260559351,
+            "bbox": [
+                745.19921875,
+                313.396484375,
+                98.50078125000073,
+                74.20351562500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 292,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1032,
+            "image_id": 899,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7858.438219516501,
+            "bbox": [
+                1817.4778419662944,
+                785.1461638857254,
+                102.21105723570145,
+                76.88442358437533
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 293,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1033,
+            "image_id": 900,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5866.281519487781,
+            "bbox": [
+                1843.7000000000007,
+                763.4375,
+                76.29999999999927,
+                76.88442358437533
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 293,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1034,
+            "image_id": 903,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6074.824820098597,
+            "bbox": [
+                1843.69921875,
+                759.8000000000029,
+                76.29999999999927,
+                79.61762542724318
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 293,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1035,
+            "image_id": 904,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4514.613440425909,
+            "bbox": [
+                1483.7089913470627,
+                331.0758034227074,
+                80.5025141059923,
+                56.08040308507407
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 294,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1036,
+            "image_id": 902,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3045.810928532708,
+            "bbox": [
+                1509.9000000000015,
+                331.076171875,
+                54.31150207519386,
+                56.08040308507407
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 294,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1037,
+            "image_id": 905,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3196.5610694418483,
+            "bbox": [
+                1509.900390625,
+                331.076171875,
+                56.999609375001455,
+                56.08040308507407
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 294,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1038,
+            "image_id": 906,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6157.387994917503,
+            "bbox": [
+                1521.2578125,
+                136.109375,
+                93.16583093165536,
+                66.09062500000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 295,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1039,
+            "image_id": 907,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6157.387994917503,
+            "bbox": [
+                1520.353515625,
+                135.203125,
+                93.16583093165536,
+                66.09062500000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 295,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1040,
+            "image_id": 906,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8683.962859130294,
+            "bbox": [
+                1835.568294574383,
+                795.0959128201757,
+                78.69346884518382,
+                110.35176090933965
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 296,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1041,
+            "image_id": 907,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8926.184023590404,
+            "bbox": [
+                1794.900390625,
+                834.900390625,
+                120.29960937500073,
+                74.19960937500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 296,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1042,
+            "image_id": 908,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 13446.479139797295,
+            "bbox": [
+                1376.072265625,
+                862.9375,
+                156.4824150599634,
+                85.92964988842141
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 297,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1043,
+            "image_id": 909,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 15705.69392344576,
+            "bbox": [
+                1376.072265625,
+                848.5,
+                156.4824150599634,
+                100.36714935302734
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 297,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1044,
+            "image_id": 910,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5438.665134984419,
+            "bbox": [
+                751.509765625,
+                244.65234375,
+                72.40078125000218,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 298,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1045,
+            "image_id": 911,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6189.061601576318,
+            "bbox": [
+                751.509765625,
+                244.65234375,
+                82.39023437500146,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 298,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1046,
+            "image_id": 912,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7240.694823158767,
+            "bbox": [
+                1495.466796875,
+                239.720703125,
+                106.73320312500073,
+                67.83919728033288
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 299,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1047,
+            "image_id": 913,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4540.694771401567,
+            "bbox": [
+                1492.75390625,
+                233.388671875,
+                66.93320312500146,
+                67.83919728033288
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 299,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1048,
+            "image_id": 914,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                1560.15234375,
+                84.55078125,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 300,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1049,
+            "image_id": 915,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6911.850120544634,
+            "bbox": [
+                1539.349609375,
+                92.69140625,
+                100.45039062500291,
+                68.80859375
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 300,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1050,
+            "image_id": 915,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7844.529479305032,
+            "bbox": [
+                713.9602328728979,
+                524.6436463292521,
+                92.26130830125112,
+                85.02512725801716
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 301,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1051,
+            "image_id": 916,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10763.31999337831,
+            "bbox": [
+                691.30078125,
+                531.9000000000015,
+                138.39999694823928,
+                77.76965484618995
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 301,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1052,
+            "image_id": 917,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                738.8448189091723,
+                306.1593132019043,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 302,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1053,
+            "image_id": 918,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                742.462890625,
+                306.16015625,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 302,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1054,
+            "image_id": 919,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10164.016449875351,
+            "bbox": [
+                1828.3321135311453,
+                734.4928965830768,
+                91.35678567084688,
+                111.25628353974389
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 303,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1055,
+            "image_id": 920,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8613.487212722755,
+            "bbox": [
+                1834.69921875,
+                744.4000000000015,
+                84.98881988525318,
+                101.3484741210923
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 303,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1056,
+            "image_id": 921,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7147.45614635033,
+            "bbox": [
+                1501.7994439551512,
+                367.25670863888445,
+                94.07035356205961,
+                75.97990095397108
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 304,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1057,
+            "image_id": 922,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4660.284663794106,
+            "bbox": [
+                1501.800000000003,
+                374.5,
+                67.79999847411818,
+                68.73576354980469
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 304,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1058,
+            "image_id": 923,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3742.559915771373,
+            "bbox": [
+                1501.80078125,
+                374.5,
+                67.79999847411818,
+                55.20000000000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 304,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1059,
+            "image_id": 924,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4288.996875000056,
+            "bbox": [
+                1501.80078125,
+                374.5,
+                77.69921875,
+                55.20000000000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 304,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1060,
+            "image_id": 925,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7270.056127633988,
+            "bbox": [
+                1506.800000000003,
+                171.38671875,
+                133.85411376952834,
+                54.31328125000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 305,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1061,
+            "image_id": 926,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 8180.264101266683,
+            "bbox": [
+                1506.80078125,
+                171.38671875,
+                133.85411376952834,
+                61.11328125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 305,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1062,
+            "image_id": 927,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 8113.3370443819185,
+            "bbox": [
+                1506.80078125,
+                171.38671875,
+                133.85411376952834,
+                60.61328125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 305,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1063,
+            "image_id": 927,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6402.929464438703,
+            "bbox": [
+                1839.1863850959999,
+                815.899933319477,
+                77.78894621477957,
+                82.3115593668008
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 306,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1064,
+            "image_id": 928,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 9429.454687500056,
+            "bbox": [
+                1798.5,
+                832.19921875,
+                121.20000000000073,
+                77.80078125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 306,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1065,
+            "image_id": 929,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10899.879690856635,
+            "bbox": [
+                1812.1000000000022,
+                808.7000000000007,
+                107.59999694824,
+                101.29999999999927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 306,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1066,
+            "image_id": 930,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 13826.924092642099,
+            "bbox": [
+                1387.829592524191,
+                873.7893816653595,
+                152.8643245383464,
+                90.45226304044263
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 307,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1067,
+            "image_id": 931,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 13826.924092642099,
+            "bbox": [
+                1372.455078125,
+                860.220703125,
+                152.8643245383464,
+                90.45226304044263
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 307,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1068,
+            "image_id": 932,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5012.684702453852,
+            "bbox": [
+                738.845703125,
+                306.16015625,
+                81.45429687500291,
+                61.53984375000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1069,
+            "image_id": 933,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5012.684702453852,
+            "bbox": [
+                745.177734375,
+                307.064453125,
+                81.45429687500291,
+                61.53984375000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1070,
+            "image_id": 934,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5012.684702453852,
+            "bbox": [
+                741.55859375,
+                307.064453125,
+                81.45429687500291,
+                61.53984375000073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1071,
+            "image_id": 935,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7622.148669541435,
+            "bbox": [
+                741.55859375,
+                306.2000000000007,
+                122.14140625000073,
+                62.404297637938726
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1072,
+            "image_id": 936,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7951.500969849036,
+            "bbox": [
+                741.55859375,
+                306.19921875,
+                122.14140625000073,
+                65.10078125000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1073,
+            "image_id": 937,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6070.0883917240935,
+            "bbox": [
+                741.55859375,
+                306.19921875,
+                93.24140625000291,
+                65.10078125000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1074,
+            "image_id": 938,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6714.5861260989805,
+            "bbox": [
+                741.55859375,
+                306.19921875,
+                103.14140625000073,
+                65.10078125000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1075,
+            "image_id": 939,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7178.642189762568,
+            "bbox": [
+                741.55859375,
+                301.7000000000007,
+                103.14140625000073,
+                69.60000305175708
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1076,
+            "image_id": 940,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6420.002156498567,
+            "bbox": [
+                741.55859375,
+                301.69921875,
+                92.24140625000291,
+                69.60000305175708
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1077,
+            "image_id": 941,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6044.162140018978,
+            "bbox": [
+                741.55859375,
+                301.69921875,
+                86.84140625000146,
+                69.60000305175708
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1078,
+            "image_id": 942,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6278.701516723738,
+            "bbox": [
+                741.55859375,
+                301.69921875,
+                86.84140625000146,
+                72.30078125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1079,
+            "image_id": 943,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6734.196438598686,
+            "bbox": [
+                741.55859375,
+                301.69921875,
+                93.14140625000073,
+                72.30078125
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 308,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1080,
+            "image_id": 944,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7136.222187500049,
+            "bbox": [
+                1851.4000000000015,
+                688.7734375,
+                68.59999999999854,
+                104.02656250000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 309,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1081,
+            "image_id": 945,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5357.36796875015,
+            "bbox": [
+                1868.5,
+                688.7734375,
+                51.5,
+                104.02656250000291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 309,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1082,
+            "image_id": 945,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8423.787601055781,
+            "bbox": [
+                1494.5632629119136,
+                217.10595199175077,
+                105.82914775731842,
+                79.59799147558806
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 310,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1083,
+            "image_id": 946,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4200.134326171979,
+            "bbox": [
+                1494.5625,
+                217.10546875,
+                71.4375,
+                58.794531250001455
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 310,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1084,
+            "image_id": 947,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5608.380135192586,
+            "bbox": [
+                1477.400390625,
+                212.60000000000218,
+                88.59999999999854,
+                63.30000152587672
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 310,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1085,
+            "image_id": 948,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                1549.2979439091723,
+                99.9288444519043,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 311,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1086,
+            "image_id": 949,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7476.779006184194,
+            "bbox": [
+                1536.6000000000022,
+                99.9296875,
+                99.53262939452907,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 311,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1087,
+            "image_id": 950,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7752.2970984371705,
+            "bbox": [
+                1536.599609375,
+                99.9296875,
+                103.20039062500291,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 311,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1088,
+            "image_id": 951,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7752.2970984371705,
+            "bbox": [
+                1535.6953125,
+                99.9296875,
+                103.20039062500291,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 311,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1089,
+            "image_id": 949,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10627.637600915526,
+            "bbox": [
+                683.20703125,
+                470.40000000000146,
+                132.06030403904515,
+                80.47564086913917
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 312,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1090,
+            "image_id": 950,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10627.637600915526,
+            "bbox": [
+                681.396484375,
+                470.400390625,
+                132.06030403904515,
+                80.47564086913917
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 312,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1091,
+            "image_id": 952,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10987.365709992579,
+            "bbox": [
+                681.396484375,
+                470.400390625,
+                132.06030403904515,
+                83.19960937500218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 312,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1092,
+            "image_id": 953,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7512.650793653783,
+            "bbox": [
+                743.400390625,
+                203.90000000000146,
+                112.1291137695298,
+                67.00000152587745
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 313,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1093,
+            "image_id": 954,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 8191.723351441434,
+            "bbox": [
+                752.4000000000015,
+                196.69921875,
+                110.40000305175636,
+                74.20039062499927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 313,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1094,
+            "image_id": 955,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7457.110273284947,
+            "bbox": [
+                752.400390625,
+                196.69921875,
+                100.49960937500146,
+                74.20039062499927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 313,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1095,
+            "image_id": 956,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7123.20851547245,
+            "bbox": [
+                752.400390625,
+                196.69921875,
+                95.99960937500146,
+                74.20039062499927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 313,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1096,
+            "image_id": 957,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7998.773124847387,
+            "bbox": [
+                752.400390625,
+                196.69921875,
+                107.79960937500073,
+                74.20039062499927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 313,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1097,
+            "image_id": 958,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 9425.21689628639,
+            "bbox": [
+                1830.1411587919538,
+                753.4878718215732,
+                86.83417251882565,
+                108.54271564853116
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 314,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1098,
+            "image_id": 959,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8952.18676340324,
+            "bbox": [
+                1833.800000000003,
+                754.4000000000015,
+                83.17480010986037,
+                107.63099822997901
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 314,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1099,
+            "image_id": 960,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8177.327334401331,
+            "bbox": [
+                1841.0,
+                754.400390625,
+                75.97557830810547,
+                107.63099822997901
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 314,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1100,
+            "image_id": 961,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6715.467038603969,
+            "bbox": [
+                1479.1863781950378,
+                320.2215318578528,
+                97.68844408367659,
+                68.74371991073713
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 315,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1101,
+            "image_id": 962,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3436.6639976501465,
+            "bbox": [
+                1479.185546875,
+                320.220703125,
+                63.314453125,
+                54.279296875
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 315,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1102,
+            "image_id": 963,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 8314.270000000275,
+            "bbox": [
+                1443.0,
+                303.0,
+                97.70000000000073,
+                85.10000000000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 315,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1103,
+            "image_id": 964,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7060.603590698591,
+            "bbox": [
+                1521.2578125,
+                141.537109375,
+                104.04218750000291,
+                67.86289062500146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 316,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1104,
+            "image_id": 965,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7903.345309448463,
+            "bbox": [
+                1521.2578125,
+                141.537109375,
+                104.04218750000291,
+                75.962890625
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 316,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1105,
+            "image_id": 966,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 8523.03655994518,
+            "bbox": [
+                1513.1000000000022,
+                141.537109375,
+                112.20000305175563,
+                75.962890625
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 316,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1106,
+            "image_id": 965,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10990.359250678395,
+            "bbox": [
+                718.4828460249191,
+                541.8295763069364,
+                120.30150984378997,
+                91.35678567084688
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 317,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1107,
+            "image_id": 966,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10010.842157619629,
+            "bbox": [
+                709.4375,
+                555.4000000000015,
+                120.30150984378997,
+                83.21460113525245
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 317,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1108,
+            "image_id": 967,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10877.05983770675,
+            "bbox": [
+                709.4375,
+                540.962890625,
+                120.30150984378997,
+                90.41499023437427
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 317,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1109,
+            "image_id": 968,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7371.970301747322,
+            "bbox": [
+                718.0,
+                321.537109375,
+                103.15802001953125,
+                71.462890625
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 318,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1110,
+            "image_id": 969,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6853.235380554252,
+            "bbox": [
+                734.30078125,
+                321.537109375,
+                95.89921875000073,
+                71.462890625
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 318,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1111,
+            "image_id": 970,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 10697.439218750127,
+            "bbox": [
+                734.30078125,
+                315.2000000000007,
+                137.4992187500029,
+                77.79999999999927
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 318,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1112,
+            "image_id": 971,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7284.843991376145,
+            "bbox": [
+                1827.427590900741,
+                764.3421433864241,
+                92.57240909925895,
+                78.69346884518382
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 319,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1113,
+            "image_id": 970,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7563.363624572451,
+            "bbox": [
+                1847.300000000003,
+                739.0,
+                72.69999999999709,
+                104.03526306152344
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 319,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1114,
+            "image_id": 972,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7563.363624572451,
+            "bbox": [
+                1845.4921875,
+                739.0,
+                72.69999999999709,
+                104.03526306152344
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 319,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1115,
+            "image_id": 973,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 5732.855450718498,
+            "bbox": [
+                1499.0858760639348,
+                348.2617334003917,
+                82.3115593668008,
+                69.64824254114137
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 320,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1116,
+            "image_id": 974,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 3878.4947268246046,
+            "bbox": [
+                1499.0859375,
+                363.599609375,
+                71.4140625,
+                54.309957885740005
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 320,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1117,
+            "image_id": 975,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4460.769966430845,
+            "bbox": [
+                1499.0859375,
+                363.599609375,
+                79.51406250000218,
+                56.10039062500073
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 320,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1118,
+            "image_id": 976,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4603.864279414311,
+            "bbox": [
+                1499.0859375,
+                361.8000000000029,
+                79.51406250000218,
+                57.90000076293654
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 320,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1119,
+            "image_id": 977,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 6793.862489013864,
+            "bbox": [
+                1499.0859375,
+                352.80078125,
+                97.61406250000073,
+                69.59921875000146
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 320,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1120,
+            "image_id": 978,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7506.368391113727,
+            "bbox": [
+                1516.734375,
+                155.10546875,
+                122.06562500000291,
+                61.49453125000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 321,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1121,
+            "image_id": 979,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7506.368391113727,
+            "bbox": [
+                1531.20703125,
+                157.818359375,
+                122.06562500000291,
+                61.49453125000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 321,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1122,
+            "image_id": 980,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7783.52635282778,
+            "bbox": [
+                1526.7000000000007,
+                157.818359375,
+                126.57265930175708,
+                61.49453125000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 321,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1123,
+            "image_id": 981,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7968.011556395015,
+            "bbox": [
+                1526.69921875,
+                151.513671875,
+                113.00078125000073,
+                70.51288909911818
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 321,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1124,
+            "image_id": 981,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12308.203784179292,
+            "bbox": [
+                1784.0,
+                825.8000000000029,
+                136.0,
+                90.50149841308303
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 322,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1125,
+            "image_id": 982,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12413.240216674643,
+            "bbox": [
+                1805.7000000000007,
+                807.7000000000007,
+                114.29999999999927,
+                108.6022766113274
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 322,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1126,
+            "image_id": 983,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 16733.850796852963,
+            "bbox": [
+                1372.4527078073188,
+                869.2667685133383,
+                163.71859610320098,
+                102.21105723570145
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 323,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1127,
+            "image_id": 984,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 19249.80949520323,
+            "bbox": [
+                1372.453125,
+                853.9000000000015,
+                163.71859610320098,
+                117.57863769531104
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 323,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1128,
+            "image_id": 984,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 2087.554031965054,
+            "bbox": [
+                1882.205078125,
+                657.1000000000022,
+                37.794921875,
+                55.23371734618922
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 324,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1129,
+            "image_id": 985,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 3439.3682812499887,
+            "bbox": [
+                1880.4000000000015,
+                663.447265625,
+                39.599999999998545,
+                86.85273437500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 325,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1130,
+            "image_id": 986,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 4742.284361572089,
+            "bbox": [
+                1873.2000000000007,
+                695.1000000000022,
+                46.79999999999927,
+                101.33086242675563
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 325,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1131,
+            "image_id": 987,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                746.9854439091723,
+                248.2706413269043,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 326,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1132,
+            "image_id": 988,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5708.300810560584,
+            "bbox": [
+                751.509765625,
+                252.794921875,
+                75.990234375,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 326,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1133,
+            "image_id": 989,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5708.300810560584,
+            "bbox": [
+                747.892578125,
+                252.794921875,
+                75.990234375,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 326,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1134,
+            "image_id": 990,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 5708.300810560584,
+            "bbox": [
+                752.416015625,
+                256.412109375,
+                75.990234375,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 326,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1135,
+            "image_id": 991,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7135.089915928354,
+            "bbox": [
+                752.416015625,
+                256.412109375,
+                94.98398437500146,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 326,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1136,
+            "image_id": 992,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6122.054453124883,
+            "bbox": [
+                1864.1000000000022,
+                690.58203125,
+                55.89999999999782,
+                109.51796875000218
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 327,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1137,
+            "image_id": 992,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 7657.988728232668,
+            "bbox": [
+                1497.2768308031264,
+                227.9602235566017,
+                105.82914775731842,
+                72.3618104323541
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 328,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1138,
+            "image_id": 993,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4647.267677024742,
+            "bbox": [
+                1494.5625,
+                227.056640625,
+                64.22265625,
+                72.3618104323541
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 328,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1139,
+            "image_id": 994,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 4647.267677024742,
+            "bbox": [
+                1490.9453125,
+                227.056640625,
+                64.22265625,
+                72.3618104323541
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 328,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1140,
+            "image_id": 995,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                1535.7295845341723,
+                123.4464225769043,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 329,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1141,
+            "image_id": 996,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                1533.919921875,
+                128.875,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 329,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1142,
+            "image_id": 997,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7405.650822747964,
+            "bbox": [
+                1528.5,
+                128.875,
+                98.58575439453125,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 329,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1143,
+            "image_id": 996,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 12432.777426733106,
+            "bbox": [
+                696.7743028952173,
+                470.3722885049865,
+                118.49246458297785,
+                104.92462512691418
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 330,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1144,
+            "image_id": 998,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10616.924465024253,
+            "bbox": [
+                696.7734375,
+                477.6000000000022,
+                118.49246458297785,
+                89.59999694824
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 330,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1145,
+            "image_id": 997,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 10616.924465024253,
+            "bbox": [
+                693.15625,
+                478.50390625,
+                118.49246458297785,
+                89.59999694824
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 330,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1146,
+            "image_id": 999,
+            "category_id": 1,
+            "iscrowd": 0,
+            "area": 11189.287111902157,
+            "bbox": [
+                693.15625,
+                466.7000000000007,
+                110.34375,
+                101.40390472412037
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 330,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1147,
+            "image_id": 1000,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 6998.512277239159,
+            "bbox": [
+                756.0303657841723,
+                233.7979850769043,
+                93.16583093165536,
+                75.1188735961914
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 331,
+                "keyframe": true
+            }
+        },
+        {
+            "id": 1148,
+            "image_id": 1001,
+            "category_id": 2,
+            "iscrowd": 0,
+            "area": 7354.538400879409,
+            "bbox": [
+                756.03125,
+                233.798828125,
+                96.76875000000291,
+                76.00117187500291
+            ],
+            "segmentation": [],
+            "attributes": {
+                "inflight": "false",
+                "occluded": false,
+                "rotation": 0.0,
+                "track_id": 331,
+                "keyframe": true
+            }
+        }
+    ]
+}
