@@ -193,31 +193,36 @@ def parse_task_track_annotations(ann_data, img_basename, width=None, height=None
 
         # Parse each keyframe annotation associated with this track
         for shape_idx, shape_item in enumerate(track_item['shapes']):
-            # Annotation label only if they are keyframes inside the track sequence
-            if shape_item['outside'] == False:
-                key_img_name   = "{}-{:08d}.jpg".format(img_basename, shape_item['frame'])
-                # Images unique id in gts_coco_labels["images"] dict
-                if key_img_name in vid_images_dict.keys():
-                    image_info = vid_images_dict[key_img_name]
-                    image_id   = image_info["id"]
-                else:
-                    image_id   = COUNT_ID_DICT["img_id"] = COUNT_ID_DICT["img_id"] + 1
-                    # COCO Format Image entry if not in dict for image metadata reuse
-                    image_info = create_image_info(image_id, key_img_name, image_size=[width, height])
-                    vid_images_dict[key_img_name] = image_info
-                    gts_coco_labels["images"].append(image_info)
+            frame_id = shape_item['frame']
+            if shape_item['outside'] == True:
+                # Annotation keyframes inside the track sequence
+                frame_id -= 1 # Keep the previous frame identifier
+            
+            # Images unique id in gts_coco_labels["images"] dict
+            key_img_name   = "{}-{:08d}.jpg".format(img_basename, frame_id)
+            if key_img_name in vid_images_dict.keys():
+                image_info = vid_images_dict[key_img_name]
+                image_id   = image_info["id"]
+            else:
+                image_id   = COUNT_ID_DICT["img_id"] = COUNT_ID_DICT["img_id"] + 1
+                # COCO Format Image entry if not in dict for image metadata reuse
+                image_info = create_image_info(image_id, key_img_name, image_size=[width, height])
+                vid_images_dict[key_img_name] = image_info
+                gts_coco_labels["images"].append(image_info)
 
-                bb_left, bb_top       = shape_item['points'][0], shape_item['points'][1]
-                bb_width, bb_height   = shape_item['points'][2]-bb_left, shape_item['points'][3]-bb_top
-                area   = bb_width * bb_height
-                box    = [bb_left, bb_top, bb_width, bb_height]
-                cat_id = MANACUS_CLASS_LABELS[label_name]["id"]
-                ann_id = COUNT_ID_DICT["ann_id"] = COUNT_ID_DICT["ann_id"] + 1
-                ann_info  = create_annotation_info(ann_id, image_id, cat_id, area, box, trk_id, is_inflight)
-                gts_coco_labels["annotations"].append(ann_info)
-                task_label_ids.append(label_name) 
-                # Unique frame identifier for frame extraction
-                task_frame_ids.add(shape_item['frame'])
+            bb_left, bb_top       = shape_item['points'][0], shape_item['points'][1]
+            bb_width, bb_height   = shape_item['points'][2]-bb_left, shape_item['points'][3]-bb_top
+            area   = bb_width * bb_height
+            box    = [bb_left, bb_top, bb_width, bb_height]
+            cat_id = MANACUS_CLASS_LABELS[label_name]["id"]
+            ann_id = COUNT_ID_DICT["ann_id"] = COUNT_ID_DICT["ann_id"] + 1
+            ann_info  = create_annotation_info(ann_id, image_id, cat_id, area, box, trk_id, is_inflight)
+            gts_coco_labels["annotations"].append(ann_info)
+            task_label_ids.append(label_name) 
+            # Unique frame identifier for frame extraction
+            task_frame_ids.add(frame_id)
+
+
             pbar.update(1) 
     COUNT_ID_DICT["labels"].append(task_label_ids)
     print("Track Count: {}\t > Labels: {} ".format(len(ann_data[0]['tracks']), len(task_label_ids)))

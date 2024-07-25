@@ -68,7 +68,12 @@
                 - for i in *.avi; do echo $i; done
         - Using [../sample_dataset.py](../sample_dataset.py) based on data sampled in "dataset/videos" with output to "dataset/frames"
 
-
-- Curated `FemVisitations` videos from SME
+- Curated `FemVisitations` videos from SME [Luke]
     - Spreadsheet (Batch 1) - [./fcat/curated/20240613_FemVisitation_samples.csv](./fcat/curated/20240613_FemVisitation_samples.csv)
-    - Sample images (1FPS) with bounding box on objects (>20px) based on optical flow - [Visualization and extraction script]
+    - CVAT sample video labeling project - http://vader.ece.ucsb.edu:8080/projects/6
+    - Download the project backup and cocofy the dataset [dataset/fcat/dataset_cvat_cocofy.py](fcat/dataset_cvat_cocofy.py)
+    ```bash
+    python dataset_cvat_cocofy.py
+    ```
+    - Visualize the COCO images dataset [visualization notebook](visualize_coco_data.ipynb)
+    - Convert the dataset to Yolo labels.txt format [fcat/dataset_coco_yolofy.py](fcat/dataset_coco_yolofy.py)

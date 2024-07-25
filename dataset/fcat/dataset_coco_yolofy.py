@@ -23,7 +23,7 @@ MANACUS_CLASS_LABELS={
     row  = [shape_item['frame'], label_id, bb_xcen/width, bb_ycen/height, bb_width/width, bb_height/height]
 """
 def convert_yolov7(json_file, data_type, use_segments=False):
-    fn = Path().resolve() / "labels" / data_type      # target folder
+    fn = Path().resolve() / "yolo" / "labels" / data_type      # target folder
     fn.mkdir(parents=True, exist_ok=True)
     
     with open(json_file, 'rt', encoding='UTF-8') as f:
@@ -88,7 +88,7 @@ def write_list_file(filename, rows, delimiter=','):
         csvw.writerows(rows)
 
 def copy_images(src_folder, data_type):
-    fn = Path().resolve() / "images" / data_type      # target folder
+    fn = Path().resolve() / "yolo" / "images" / data_type      # target folder
     fn.mkdir(parents=True, exist_ok=True)
     images_list = []
     src_folder = Path(src_folder)
@@ -96,7 +96,7 @@ def copy_images(src_folder, data_type):
         out = fn / os.path.basename(item)
         shutil.copy(item, out)
         images_list.append([str(out)])
-    write_list_file(Path().resolve() / "images" / "{}.txt".format(data_type), images_list)
+    write_list_file(Path().resolve() / "yolo" / "images" / "{}.txt".format(data_type), images_list)
     return
 
 def min_index(arr1, arr2):
@@ -164,9 +164,9 @@ def merge_multi_segment(segments):
 if __name__ == "__main__":
 
     # Train
-    convert_yolov7(json_file="../coco/fcat-manacus-v1/annotations/train.json", data_type="train")
-    copy_images(src_folder="../coco/fcat-manacus-v1/train/images", data_type="train")
+    convert_yolov7(json_file="./coco/fcat-manacus-v2/annotations/train.json", data_type="train")
+    copy_images(src_folder="./coco/fcat-manacus-v2/train/images", data_type="train")
 
     # Val
-    convert_yolov7(json_file="../coco/fcat-manacus-v1/annotations/val.json", data_type="val")
-    copy_images(src_folder="../coco/fcat-manacus-v1/val/images", data_type="val")
+    convert_yolov7(json_file="./coco/fcat-manacus-v2/annotations/validation.json", data_type="validation")
+    copy_images(src_folder="./coco/fcat-manacus-v2/validation/images", data_type="validation")
