@@ -11,7 +11,7 @@ dict(type='WandbVisBackend', init_kwargs={
 
 
 # ========================training configurations======================
-work_dir = './work_dirs/rtmdet_s_manacus_r1'
+work_dir = './work_dirs/rtmdet_s_pipeswitch'
 max_epochs = 100
 interval = 5
 # Batch size of a single GPU during training
@@ -140,6 +140,6 @@ custom_hooks = [
         priority=49),
     dict(
         type='mmdet.PipelineSwitchHook',
-        switch_epoch=_base_.max_epochs - _base_.num_epochs_stage2,
+        switch_epoch=max_epochs - _base_.num_epochs_stage2,
         switch_pipeline=train_pipeline_stage2)
 ]

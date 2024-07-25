@@ -88,10 +88,10 @@ python train_dual.py --workers 8 --device 0 --batch 16 --data data/manacus.yaml 
 ## `Stage 2` Transfer learning camera trap manacus detection model
 
 ### (.) Dataset Preparation
-- fcat-manacus-v1: Sample 10 videos male/female stationary track labeling
+- fcat-manacus-v2: Sample 10 videos male/female stationary track labeling
   - Link: http://vader.ece.ucsb.edu:8080/projects/6?page=1
   - COCO 1.0 project export format for model evaluation
-- fcat-manacus-v2: TODO
+- fcat-manacus-v3: TODO with 239 video labeling
 
 ### (.) Yolov7 - `Stage 2` manacus detection model
 
@@ -107,14 +107,7 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
   ```
   - No learning happening
     ```log
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-    49/299     14.3G   0.02266  0.002145 0.0008067   0.02561         9       640: 100%|████████████████████████████████████████████| 182/182 [01:26<00:00,  2.10it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 23/23 [00:06<00:00,  3.63it/s]
-      all         726         354      0.0291      0.0196     0.00102    0.000207
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-    50/299     14.3G   0.02254  0.002002 0.0006905   0.02524         7       640: 100%|███████████████████████████████████████████| 182/182 [01:28<00:00,  2.06it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 23/23 [00:06<00:00,  3.46it/s]
-      all         726         354      0.0525      0.0196     0.00186     0.00021
+
     ```
   ```bash
   wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
@@ -123,24 +116,7 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
   ```
   - No learning happening
     ```log
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-    20/299     12.8G   0.02386  0.003066 0.0008518   0.02778         5      1280: 100%|███████████████████████████████████████████| 726/726 [04:08<00:00,  2.92it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 91/91 [00:13<00:00,  6.92it/s]
-      all         726         354      0.0622      0.0196     0.00236    0.000535
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-    21/299     12.8G   0.02408  0.003029  0.000979   0.02809         0      1280: 100%|███████████████████████████████████████████| 726/726 [04:10<00:00,  2.90it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|████████████████████████████████████████████| 91/91 [00:13<00:00,  6.89it/s]
-      all         726         354       0.119      0.0196     0.00516    0.000544
-    ```
-    ```log
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-   100/299     13.2G    0.0168    0.0022 0.0004092   0.01941         5      1280: 100%|██████████████████████████████████████████████| 726/726 [05:54<00:00,  2.05it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████| 91/91 [00:17<00:00,  5.09it/s]
-      all         726         354      0.0216      0.0196    0.000765    0.000155
-     Epoch   gpu_mem       box       obj       cls     total    labels  img_size
-   101/299     13.2G   0.01714  0.002182 0.0003572   0.01968         5      1280: 100%|██████████████████████████████████████████████| 726/726 [05:55<00:00,  2.04it/s]
-    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 100%|██████████████████████████████████| 91/91 [00:17<00:00,  5.08it/s]
-      all         726         354      0.0223      0.0196    0.000784    0.000159
+
     ```
   - [TODO] Attempt with small objects modification
   ```bash

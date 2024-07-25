@@ -1,0 +1,3 @@
+label,label_id,points,type,confidence,frame_id
+Male,0,"[1504, 334, 1559, 385]",rectangle,0.70988095,./deploy/frame_000835.PNG
+Female,1,"[741, 268, 836, 353]",rectangle,0.6919663,./deploy/frame_000835.PNG

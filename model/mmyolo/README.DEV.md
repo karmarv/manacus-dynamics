@@ -32,7 +32,48 @@ CUDA_VISIBLE_DEVICES=0 PORT=29601 ./tools/dist_train.sh rtmdet_s_manacus.py 1
 ```
 >
 ```log
-
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.539
+ Average Precision  (AP) @[ IoU=0.50      | area=   all | maxDets=100 ] = 0.789
+ Average Precision  (AP) @[ IoU=0.75      | area=   all | maxDets=100 ] = 0.679
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.553
+ Average Precision  (AP) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.444
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=  1 ] = 0.586
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets= 10 ] = 0.621
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=   all | maxDets=100 ] = 0.642
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= small | maxDets=100 ] = -1.000
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=100 ] = 0.652
+ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=100 ] = 0.559
+07/25 14:25:13 - mmengine - INFO -
++----------+-------+--------+--------+-------+-------+-------+
+| category | mAP   | mAP_50 | mAP_75 | mAP_s | mAP_m | mAP_l |
++----------+-------+--------+--------+-------+-------+-------+
+| Male     | 0.555 | 0.796  | 0.699  | nan   | 0.553 | 0.574 |
+| Female   | 0.523 | 0.781  | 0.658  | nan   | 0.553 | 0.315 |
+| Unknown  | nan   | nan    | nan    | nan   | nan   | nan   |
++----------+-------+--------+--------+-------+-------+-------+
 ```
 
 #### Run - RTMDet-M
+
+### Deploy for inference
+```
+pip install onnx onnx-simplifier
+python ./projects/easydeploy/tools/export_onnx.py rtmdet_s_manacus.py \
+  ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth \
+	--work-dir ./work_dirs/rtmdet_s_manacus_r1/deploy/ \
+  --img-size 640 640 --batch 1 --device cpu \
+	--iou-threshold 0.65 \
+	--score-threshold 0.25
+```
+- export logs
+  ```
+  Export ONNX with bbox decoder and NMS ...
+  Loads checkpoint by local backend from path: ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth
+  ============= Diagnostic Run torch.onnx.export version 2.0.1+cu118 =============
+  verbose: False, log level: Level.ERROR
+  ======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+  ONNX export success, save into ./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx
+  ```
+- Netron image of the exported ONNX model - [./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png](./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png)

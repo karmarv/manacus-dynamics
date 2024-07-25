@@ -159,6 +159,8 @@ cython_debug/
 #  option (not recommended) you can uncomment the following to ignore the entire idea folder.
 #.idea/
 
+*.onnx
+
 # Dataset and Labels
 dataset/box_credentials.pass
 dataset/**/*.mp4
@@ -171,3 +173,6 @@ dataset/**/*.txt
 dataset/**/*.zip
 dataset/**/*.PNG
 *.cache
+
+inference/**/*.MP4
+inference/**/*.mp4
