@@ -4,8 +4,8 @@
 #download: 
 
 # train and val data as 1) directory: path/images/, 2) file: path/images.txt, or 3) list: [path1/images/, path2/images/]
-train: /home/rahul/workspace/eeb/manacus-project/manacus-dynamics/dataset/fcat/yolo/fcat-manacus-v2/images/train.txt  # 118287 images
-val:   /home/rahul/workspace/eeb/manacus-project/manacus-dynamics/dataset/fcat/yolo/fcat-manacus-v2/images/validation.txt   # 5000 images
+train: /home/rahul/workspace/eeb/manacus-project/manacus-dynamics/dataset/fcat/yolo/fcat-manacus-v2/images/train.txt        # 880 images from 10 video set
+val:   /home/rahul/workspace/eeb/manacus-project/manacus-dynamics/dataset/fcat/yolo/fcat-manacus-v2/images/validation.txt   # 197 images
 #test:  /home/rahul/workspace/eeb/manacus-project/manacus-dynamics/dataset/ebird/yolo/images/test.txt   # 20288 of 40670 images, submit to https://competitions.codalab.org/competitions/20794
 
 # number of classes

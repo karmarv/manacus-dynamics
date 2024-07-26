@@ -103,31 +103,38 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
   ```bash
   wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
   # train p5 models
-  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'yolov7.pt' --name r6-fcat-init --hyp data/hyp.scratch.p5.yaml
+  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name r6-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
-  - No learning happening
+  - logs general --cfg cfg/training/yolov7-manacus.yaml
     ```log
-
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95
+      all         197         241       0.918       0.949       0.959       0.801
+     Male         197         128       0.924       0.969        0.95       0.774
+   Female         197         113       0.912       0.929       0.967       0.828
     ```
-  ```bash
-  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7.pt
-  # train p5 models
-  python train.py --workers 16 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'yolov7.pt' --name  r6-fcat-init-1280w-v2 --hyp data/hyp.scratch.p5.yaml
-  ```
-  - No learning happening
-    ```log
-
+  - logs small objects --cfg cfg/training/yolov7-manacus-so.yaml
+    ```logs
+      all         197         241       0.904       0.921        0.91       0.739
+     Male         197         128       0.891       0.956        0.94       0.725
+   Female         197         113       0.917       0.885        0.88       0.754
     ```
-  - [TODO] Attempt with small objects modification
+
+- Attempt with resolution modification
   ```bash
-  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat-so.yaml --weights 'yolov7.pt' --name  r6-fcat-so-1280w-v3 --hyp data/hyp.scratch.p5.yaml
+  python train.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name  r6-fcat-b4-1280w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
+  - logs
+  ```log
+  *In-progress
+  ```
+  
   - [TODO] Attempt with yolov7-w6 model
   ```bash
-  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus-fcat.yaml --weights 'yolov7.pt' --name  r6-fcat-w6-1280w-v4 --hyp data/hyp.scratch.p5.yaml
+  wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt
+  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus-fcat.yaml --weights 'yolov7-w6.pt' --name  r6-fcat-w6-1280w-v4 --hyp data/hyp.scratch.p5.yaml
   ```
 
-- [r7-transfer]
+- [r7-transfer] TODO
   ```bash
   # train p5 models - model/yolov7/runs/train/r3-ebird-aug/weights/best_289.pt
-  python train.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus-fcat.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-tx-1280w --hyp data/hyp.scratch.p5.yaml
+  python train.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-tx-1280w --hyp data/hyp.scratch.p5.yaml
