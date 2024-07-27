@@ -113,7 +113,7 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
    Female         197         113       0.912       0.929       0.967       0.828
     ```
   - logs small objects --cfg cfg/training/yolov7-manacus-so.yaml
-    ```logs
+    ```log
       all         197         241       0.904       0.921        0.91       0.739
      Male         197         128       0.891       0.956        0.94       0.725
    Female         197         113       0.917       0.885        0.88       0.754
@@ -125,16 +125,24 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
   ```
   - logs
   ```log
-  *In-progress
+     all         197         241       0.898       0.919       0.924       0.734
+    Male         197         128       0.897       0.961       0.951       0.723
+  Female         197         113         0.9       0.876       0.897       0.746
   ```
   
   - [TODO] Attempt with yolov7-w6 model
+    - train p6 models with multiple error fixed in utils/loss.py [reference](https://stackoverflow.com/questions/74372636/indices-should-be-either-on-cpu-or-on-the-same-device-as-the-indexed-tensor)
   ```bash
   wget https://github.com/WongKinYiu/yolov7/releases/download/v0.1/yolov7-w6.pt
-  python train.py --workers 8 --device 0 --batch-size 4 --epochs 100 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus-fcat.yaml --weights 'yolov7-w6.pt' --name  r6-fcat-w6-1280w-v4 --hyp data/hyp.scratch.p5.yaml
+  python train_aux.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus.yaml --weights 'yolov7-w6.pt' --name  r6-fcat-b4-1280w-w6 --hyp data/hyp.scratch.p5.yaml --epochs 200 
+  ```
+  ```log
+     all         197         241       0.906       0.961       0.957       0.799
+    Male         197         128       0.912       0.975       0.949       0.767
+  Female         197         113       0.899       0.947       0.965       0.831
   ```
 
 - [r7-transfer] TODO
   ```bash
   # train p5 models - model/yolov7/runs/train/r3-ebird-aug/weights/best_289.pt
-  python train.py --workers 8 --device 0 --batch-size 4 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-tx-1280w --hyp data/hyp.scratch.p5.yaml
+  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-b16-640w-tx --hyp data/hyp.scratch.p5.yaml 
