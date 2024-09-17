@@ -24,20 +24,22 @@ Camera Trap video processing for Manacus dynamics assessment
 
 #### Environment Setup
 
-- Python 3.8.18 Installation
+- Python 3.9 Installation
   - Instructions via Miniconda v23.1.0 - https://docs.conda.io/projects/miniconda/en/latest/
-  - Create a virtual environment named "mothra" for this analysis
+  - Create a virtual environment for this analysis
     ```
     conda env remove -n mana
     conda create -n mana python=3.9 jupyterlab -c conda-forge
     conda activate mana
-    pip install -r requirements.txt
     ```
-  - Clone the current codebase - `git clone https://github.com/karmarv/manacus-dynamics.git && cd manacus-dynamics`
-  - Install pre-requisite packages in the activated python virtual environment using - `pip install -r requirements.txt`
+- Clone the current codebase - `git clone https://github.com/karmarv/manacus-dynamics.git && cd manacus-dynamics`
+- Install pre-requisite packages in the activated python virtual environment using - `pip install -r requirements.txt`
 
 #### Dataset
 - Refer [./dataset/DATASET.md](./dataset/DATASET.md)
 
-#### Model
-- Refer [./model/MODEL.md](./model/MODEL.md)
+#### Model - Refer [./model/MODEL.md](./model/MODEL.md)
+- MMDetection for detection model training
+  - Experiments described in [./model/mmdetection/README.DEV.md](./model/mmdetection/README.DEV.md)
+- YoloV7 for detection model training
+  - Experiments described in [./model/yolov7/README.DEV.md](./model/yolov7/README.DEV.md)
