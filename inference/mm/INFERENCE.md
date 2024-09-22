@@ -8,7 +8,7 @@
 - Create a virtual environment named "infer" for this analysis
   ```bash
   conda env remove -n infer
-  conda create -n infer python=3.9 
+  conda create -n infer python=3.10 -y
   conda activate infer
   ```
 - Install the necessary packages
