@@ -9,7 +9,8 @@ matplotlib>=3.6.1
 funcy==2.0
 wandb==0.17.0
 albumentations==1.4.6
-fiftyone==0.24.1
+fiftyone-db==0.4.3
+fiftyone==1.0.1
 exif
 tqdm
 boxsdk
