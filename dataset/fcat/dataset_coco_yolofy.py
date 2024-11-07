@@ -23,11 +23,11 @@ MANACUS_CLASS_LABELS={
     row  = [shape_item['frame'], label_id, bb_xcen/width, bb_ycen/height, bb_width/width, bb_height/height]
 """
 def convert_yolov7(json_file, data_type, use_segments=False):
-    fn = Path().resolve() / "yolo" / "labels" / data_type      # target folder
-    fn.mkdir(parents=True, exist_ok=True)
+    path_labels = Path().resolve() / "yolo" / "labels" / data_type      # target folder
+    path_labels.mkdir(parents=True, exist_ok=True)
     
-    with open(json_file, 'rt', encoding='UTF-8') as f:
-        data = json.load(f)
+    with open(json_file, 'rt', encoding='UTF-8') as jsonf:
+        data = json.load(jsonf)
     
     # Create image dict
     images = {"%g" % x["id"]: x for x in data["images"]}
@@ -39,7 +39,7 @@ def convert_yolov7(json_file, data_type, use_segments=False):
     # Write labels file
     for img_id, anns in tqdm(imgToAnns.items(), desc=f"Annotations {json_file}"):
         img = images["%g" % img_id]
-        h, w, f = img["height"], img["width"], img["file_name"]
+        h, w, image_file = img["height"], img["width"], img["file_name"]
 
         bboxes = []
         segments = []
@@ -70,8 +70,8 @@ def convert_yolov7(json_file, data_type, use_segments=False):
                 if s not in segments:
                     segments.append(s)
 
-        # Write
-        with open((fn / f).with_suffix(".txt"), "a") as file:
+        # Write labels to txt file
+        with open((path_labels / image_file).with_suffix(".txt"), "a") as file:
             for i in range(len(bboxes)):
                 line = (*(segments[i] if use_segments else bboxes[i]),)  # cls, box or segments
                 file.write(("%g " * len(line)).rstrip() % line + "\n")    
@@ -87,14 +87,18 @@ def write_list_file(filename, rows, delimiter=','):
         csvw = csv.writer(my_csv, delimiter=delimiter)
         csvw.writerows(rows)
 
-def copy_images(src_folder, data_type):
+def copy_images(src_folder, data_type, symlink=True):
     fn = Path().resolve() / "yolo" / "images" / data_type      # target folder
     fn.mkdir(parents=True, exist_ok=True)
     images_list = []
     src_folder = Path(src_folder)
     for item in tqdm(src_folder.iterdir()):
         out = fn / os.path.basename(item)
-        shutil.copy(item, out)
+        if symlink:
+            #if item.is_symlink():
+            Path(out.resolve()).symlink_to(item.resolve())
+        else:
+            shutil.copy(item, out)
         images_list.append([str(out)])
     write_list_file(Path().resolve() / "yolo" / "images" / "{}.txt".format(data_type), images_list)
     return
@@ -162,11 +166,15 @@ def merge_multi_segment(segments):
 
 
 if __name__ == "__main__":
-
+    data_base_dir="./coco/fcat-manacus-v4-inter"
     # Train
-    convert_yolov7(json_file="./coco/fcat-manacus-v2/annotations/train.json", data_type="train")
-    copy_images(src_folder="./coco/fcat-manacus-v2/train/images", data_type="train")
+    convert_yolov7(json_file=data_base_dir+"/annotations/train.json", data_type="train")
+    copy_images(src_folder=data_base_dir+"/train/images", data_type="train", symlink=True)
 
     # Val
-    convert_yolov7(json_file="./coco/fcat-manacus-v2/annotations/validation.json", data_type="validation")
-    copy_images(src_folder="./coco/fcat-manacus-v2/validation/images", data_type="validation")
+    convert_yolov7(json_file=data_base_dir+"/annotations/val.json", data_type="val")
+    copy_images(src_folder=data_base_dir+"/val/images", data_type="val", symlink=True)
+
+    # Test
+    convert_yolov7(json_file=data_base_dir+"/annotations/test.json", data_type="test")
+    copy_images(src_folder=data_base_dir+"/test/images", data_type="test", symlink=True)

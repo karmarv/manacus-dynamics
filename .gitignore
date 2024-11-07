@@ -176,3 +176,5 @@ dataset/**/*.PNG
 
 inference/**/*.MP4
 inference/**/*.mp4
+dataset/fcat/coco/*
+dataset/fcat/yolo/*

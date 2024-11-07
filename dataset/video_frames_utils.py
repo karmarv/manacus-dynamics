@@ -164,13 +164,14 @@ class FrameExtractorOpencv:
 def get_frame_filename_by_video(vid_file, frame_id):
     return "{}-{:08d}.jpg".format(get_clean_basename(vid_file), frame_id)
 
-def get_video_file_match(vid_folder):
-    vid_file = None
+def get_video_files(vid_folder, extensions=('.mp4', '.MP4', '.wmv', '.WMV', '.avi', '.AVI', '.mpg', '.MPG')):
+    """ Look for video files in a folder """
+    vid_files = []
     for root, dirnames, filenames in os.walk(vid_folder):
         for filename in filenames:
-            if filename.endswith(('.mp4', '.MP4', '.wmv', '.WMV', '.avi', '.AVI', '.mpg', '.MPG')):
-                vid_file = os.path.join(root, filename)
-    return vid_file
+            if filename.endswith(extensions):
+                vid_files.append(os.path.join(root, filename))
+    return vid_files
 
 #
 # File IO Utility
