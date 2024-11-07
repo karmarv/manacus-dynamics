@@ -1,0 +1,20 @@
+pandas==2.0.3
+scikit-image==0.21.0
+opencv-python==4.10.0.82
+opencv-python-headless==4.10.0.82
+matplotlib>=3.6.1
+funcy==2.0
+numpy==1.24.4
+cython
+setuptools
+tqdm
+argparse
+future
+prettytable
+openmim
+tensorboard
+wandb
+
+--extra-index-url https://download.pytorch.org/whl/cu121
+torch==2.1.2
+torchvision==0.16.2
