@@ -163,21 +163,28 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
 ```
 - https://wandb.ai/karmar/Yv7-Manacus
 
-- [d4-r1-fcat-b16-640w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+- [d4-r1-fcat-b16-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r1-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/87iczpy9
 
-- [d4-r2-fcat-b64-640w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+- [d4-r2-fcat-b64-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 1 --batch-size 64 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r2-fcat-b64-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   -  🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/uwp1hxco
 
 
-- [d4-r3-fcat-b16-1280w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+- [d4-r3-fcat-b16-1280w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 2 --batch-size 16 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r3-fcat-b16-1280w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/cgv3l6zu
+
+- [d4-r4-fcat-b16-1280w-w6] train yolov7-w6 models with V4-inter YOLO dataset [Nov/06/2024]
+  ```bash
+  python train_aux.py --workers 8 --device 3 --batch-size 16 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus.yaml --weights 'yolov7-w6.pt' --name d4-r4-fcat-b16-1280w-w6 --hyp data/hyp.scratch.p5.yaml --epochs 200 
+  ```
+  -  🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/sakogsq
+
