@@ -33,14 +33,14 @@ seaborn>=0.11.0
 ipython  # interactive notebook
 psutil  # system utilization
 thop  # FLOPs computation
-# albumentations>=1.0.3
-# pycocotools>=2.0  # COCO mAP
+albumentations>=1.0.3
+pycocotools>=2.0  # COCO mAP
 # roboflow
 
 
-#--index-url https://download.pytorch.org/whl/cu118
-#torch==2.3.0+cu118
-#torchvision==0.18.0+cu118
+--extra-index-url https://download.pytorch.org/whl/cu118
+torch==2.3.0+cu118
+torchvision==0.18.0+cu118
 
 #--extra-index-url https://download.pytorch.org/whl/cu118
 #torch==2.0.1

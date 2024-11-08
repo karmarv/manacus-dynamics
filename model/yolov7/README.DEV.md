@@ -3,8 +3,9 @@
 
 - Python environment
     ```
+    conda create -n yv7 python=3.9 -y
+    conda activate yv7
     pip install -r requirements.txt
-    pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu118
     pip install Pillow==9.5.0
     ```
 
@@ -14,13 +15,22 @@
   ```
   wget https://developer.download.nvidia.com/compute/cuda/11.8.0/local_installers/cuda_11.8.0_520.61.05_linux.run
   sudo sh cuda_11.8.0_520.61.05_linux.run
+  rm cuda_11.8.0_520.61.05_linux.run
   ```
-- Environment variables check
-  ```
+- Environment variables check and PyTorch
+  ```bash
   export CUDA_HOME="/usr/local/cuda-11.8"
   export PATH=$CUDA_HOME/bin:$PATH
   export LD_LIBRARY_PATH=$CUDA_HOME/lib64:$LD_LIBRARY_PATH
+
+  # Ensure download for the 11.8 version
+  pip install torch==2.0.1 torchvision==0.15.2 --index-url https://download.pytorch.org/whl/cu118
   ```
+- Test
+  ```bash
+  python -c 'import torch; from torch.utils.cpp_extension import CUDA_HOME; print(torch.__version__, torch.cuda.is_available(), CUDA_HOME)'
+  ```
+
 
 
 ## (1.) Yolov7 - `Stage 1` manacus detection model
@@ -144,8 +154,30 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
   Female         197         113       0.899       0.947       0.965       0.831
   ```
 
-- [r7-transfer] TODO
-  ```bash
-  # train p5 models - model/yolov7/runs/train/r3-ebird-aug/weights/best_289.pt
-  python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'runs/train/r3-ebird-aug/weights/best_289.pt' --name r7-fcat-b16-640w-tx --hyp data/hyp.scratch.p5.yaml 
 
+--- 
+
+Training on larger video labeled dataset 
+```
+export CUDA_VISIBLE_DEVICES=0,1,2,3  
+```
+- https://wandb.ai/karmar/Yv7-Manacus
+
+- [d4-r1-fcat-b16-640w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+  ```bash
+  python train.py --workers 8 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r1-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
+  ```
+  - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/87iczpy9
+
+- [d4-r2-fcat-b64-640w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+  ```bash
+  python train.py --workers 8 --device 1 --batch-size 64 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r2-fcat-b64-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
+  ```
+  -  🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/uwp1hxco
+
+
+- [d4-r3-fcat-b16-1280w] train p5 models with V4-inter YOLO dataset [Nov/06/2024]
+  ```bash
+  python train.py --workers 8 --device 2 --batch-size 16 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r3-fcat-b16-1280w --hyp data/hyp.scratch.p5.yaml --epochs 200
+  ```
+  - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/cgv3l6zu
