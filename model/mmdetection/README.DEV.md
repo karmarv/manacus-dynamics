@@ -93,11 +93,17 @@ CUDA_VISIBLE_DEVICES=0 PORT=29601 ./tools/dist_train.sh rtmdet_s_manacus.py 1
 +----------+-------+--------+--------+-------+-------+-------+
 ```
 
-#### Run - RTMDet-M [In-progress]
-```
-# 2 GPU # XXX hours for b48 300 epochs
-CUDA_VISIBLE_DEVICES=0,1 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_allaug.py 2
-```
+#### Run - RTMDet-M 
+- Run 1 - b48 300 epochs. Estimated 5-6 days
+  ```
+  CUDA_VISIBLE_DEVICES=0,1 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_allaug.py 2
+  ```
+  - The learning collapsed after e30. Reference: https://github.com/open-mmlab/mmdetection/issues/2942
+- Run 2 - halved the learning rate and training for e100. Estimated 1 day
+  ```
+  CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_allaug.py 4
+  ```
+  - [In-progress]
 
 ### Deploy for inference
 ```

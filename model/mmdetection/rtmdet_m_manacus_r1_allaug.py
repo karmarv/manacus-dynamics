@@ -11,10 +11,10 @@ dict(type='WandbVisBackend', init_kwargs={
         "reinit": True,}),]
 
 # ========================training configurations======================
-work_dir = './work_dirs/rtmdet_m_r1_allaug'
-max_epochs = 300
-stage2_num_epochs = 50
-base_lr = 0.001
+work_dir = './work_dirs/rtmdet_m_r2_allaug_halflr_e100'
+max_epochs = 100
+stage2_num_epochs = 20
+base_lr = 0.0005
 interval = 5
 
 # Batch size of a single GPU during training
