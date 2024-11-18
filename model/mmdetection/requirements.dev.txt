@@ -14,7 +14,9 @@ prettytable
 openmim
 tensorboard
 wandb
+setuptools==69.5.1
 
---extra-index-url https://download.pytorch.org/whl/cu121
-torch==2.1.2
-torchvision==0.16.2
+
+#--extra-index-url https://download.pytorch.org/whl/cu118
+#torch==2.0.1
+#torchvision==0.15.2

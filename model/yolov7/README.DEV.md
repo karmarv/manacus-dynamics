@@ -168,13 +168,28 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
   python train.py --workers 8 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r1-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/87iczpy9
+  ```
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95
+      all       19209       26106       0.966       0.963       0.983       0.857
+     Male       19209       13256       0.973       0.967       0.989       0.915
+   Female       19209       12831        0.98       0.974        0.99       0.905
+  Unknown       19209          19       0.946       0.947        0.97       0.751
+  200 epochs completed in 112.720 hours.
+  ```
 
 - [d4-r2-fcat-b64-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 1 --batch-size 64 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r2-fcat-b64-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   -  🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/uwp1hxco
-
+  ```
+    Class      Images      Labels           P           R      mAP@.5  mAP@.5:.95: 
+      all       19209       26106       0.949       0.967       0.959       0.755
+     Male       19209       13256       0.947       0.974       0.978       0.829
+   Female       19209       12831       0.953       0.981       0.983        0.83
+  Unknown       19209          19       0.947       0.947       0.917       0.605
+  200 epochs completed in 111.019 hours
+  ```
 
 - [d4-r3-fcat-b16-1280w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
