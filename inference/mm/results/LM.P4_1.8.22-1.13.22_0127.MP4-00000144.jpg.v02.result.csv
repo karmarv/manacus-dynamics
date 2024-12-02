@@ -1,0 +1,4 @@
+label,label_id,box_xtl,box_ytl,box_xbr,box_ybr,confidence,frame_id
+Male,0,1504,325,1567,388,0.5770879,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg
+Female,1,724,315,840,385,0.56561583,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg
+Female,1,66,255,146,315,0.5089057,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg

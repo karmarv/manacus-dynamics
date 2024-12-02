@@ -116,11 +116,12 @@ class ModelHandler:
             inp = {self.input_details[0]: im}
             # ONNX inference
             output = list()
-            num_dets, boxes, scores, labels = self.model.run(self.output_details, inp)
+            dets, labels = self.model.run(self.output_details, inp)
+            dets, labels = np.array(dets[0]), np.array(labels[0])
+
             # for det in detections - single batch
-            boxes  = boxes[0][:, 0:4]
-            labels = labels[0]
-            scores = scores[0]
+            boxes  = dets[:, 0:4]
+            scores = dets[:, 4]
             #print("B: ", boxes.shape, "L: ", labels.shape, "S: ", scores.shape)
             #print("B: ", boxes, "\nL: ", labels, "\nS: ", scores)
             boxes -= np.array(dwdh * 2)
@@ -158,11 +159,12 @@ class ModelHandler:
                     results.append({
                         "label": label_name,
                         "label_id": label_id,
-                        "points": [xtl, ytl, xbr, ybr],
-                        "type": "rectangle",
-                        "confidence": str(score),
+                        "box_xtl": xtl, 
+                        "box_ytl": ytl, 
+                        "box_xbr": xbr, 
+                        "box_ybr": ybr,
+                        "confidence": score,
                     })
-
         return results
     
     def plot_one_box(self, x, img, color=None, label=None, line_thickness=3):
@@ -188,22 +190,20 @@ Input: Video
     - time python rtmdet_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
 
 - Intermediate output with switch '--view-debug':
-    - *.manacus.result.{jpg or mp4} : Video with bounding box draw inframe
-    - *.manacus.result.csv          :   CSV file with frame recognition information written in rows
+    - *.v02.result.{jpg or mp4} : Video with bounding box draw inframe
+    - *.v02.result.csv          : CSV file with frame recognition information written in rows
 
 """
 if __name__ == "__main__":
     parser=argparse.ArgumentParser(description='Process provided video for recognition.')
     parser.add_argument("--video",       type=str,      default=None,  help="Path where video file is located")
     parser.add_argument("--image",       type=str,      default=None,  help="Path where image file is located")
-    parser.add_argument("--model",       type=str,      default="./deploy/rtmdet_s_b16_e100.onnx",  help="Path where ONNX model is located")
-    parser.add_argument("--out-suffix",  type=str,      default="manacus.result",  help="Result filename suffix")
-    parser.add_argument("--out-path",    type=str,      default="./results",  help="Output path for writing result files")
-    parser.add_argument("--threshold",   type=float,    default=0.3,  help="Minumum global threshold for detection results")
+    parser.add_argument("--model",       type=str,      default="./deploy/v02_rtmdet_m_r1_noswitch_allaug_b16_e135.onnx",  help="Path where ONNX model is located")
+    parser.add_argument("--out-suffix",  type=str,      default="v02.result",  help="Result filename suffix")
+    parser.add_argument("--out-path",    type=str,      default="./results",  help="Result output path")
+    parser.add_argument("--threshold",   type=float,    default=0.3,  help="Minimum global threshold for detection results")
     parser.add_argument('--view-debug',  action='store_true', help='write qualitative intermediate results')
     args=parser.parse_args()
-
-
     
     # Inference and other analysis model initialization
     model = ModelHandler(CLASS_LABELS, path=args.model)
@@ -215,7 +215,6 @@ if __name__ == "__main__":
     result_df = pd.DataFrame()
     txt_count = 0
     out_suffx = args.out_suffix
-
 
     if args.video is not None:
         result_video_fps = 20
@@ -252,18 +251,19 @@ if __name__ == "__main__":
                 # Visualize intermediate qualitative results in video
                 if args.view_debug:
                     for det in results:
-                        xyxy  = det["points"]
+                        xyxy  = [det["box_xtl"], det["box_ytl"], det["box_xbr"], det["box_ybr"] ]
                         label = f'{det["label"]} {float(det["confidence"]):.2f}'
                         if label:
                             model.plot_one_box(xyxy, img_from_frame, label=label, color=LABEL_COLORS[int(det["label_id"])], line_thickness=2)
+                    # Video result entry for debug view
                     vid_writer.write(img_from_frame)
             # Prepare results
             result_df = pd.concat(result_df_list)
+            result_df["label_id"] = result_df["label_id"].astype(int)
+            result_df.to_csv("{}.{}.csv".format(result_out_base, out_suffx), index=False)
+            print("{} - {} results written to {}".format(datetime.datetime.now(), len(result_df), result_out_base))
             if args.view_debug:
                 vid_writer.release()
-                # Update results for debug view
-                result_df.to_csv("{}.{}.csv".format(result_out_base, out_suffx), index=False)
-                print("{} - {} results written to {}".format(datetime.datetime.now(), len(result_df), result_out_file))
             frame_extractor.cap.release()
         except Exception as e:
             raise Exception(f"Unable to process {args.video}: {e}")
@@ -287,7 +287,7 @@ if __name__ == "__main__":
             # Visualize results
             if args.view_debug:
                 for det in results:
-                    xyxy  = det["points"]
+                    xyxy  = [det["box_xtl"], det["box_ytl"], det["box_xbr"], det["box_ybr"] ]
                     label = f'{det["label"]} {float(det["confidence"]):.2f}'
                     if label:
                         model.plot_one_box(xyxy, image, label=label, color=LABEL_COLORS[int(det["label_id"])], line_thickness=2)

@@ -1,3 +1,0 @@
-label,label_id,points,type,confidence,frame_id
-Male,0,"[1503, 334, 1565, 386]",rectangle,0.7283878,./deploy/frame_000830.PNG
-Female,1,"[733, 268, 836, 356]",rectangle,0.7020108,./deploy/frame_000830.PNG

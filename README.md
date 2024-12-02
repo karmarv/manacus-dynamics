@@ -28,7 +28,6 @@ Camera Trap video processing for Manacus dynamics assessment
 - Refer [./dataset/DATASET.md](./dataset/DATASET.md)
 
 ### Model 
-- Refer [./model/MODEL.md](./model/MODEL.md)
 - MMDetection for detection model training
   - Experiments described in [./model/mmdetection/README.DEV.md](./model/mmdetection/README.DEV.md)
   - inference code: [./inference/mm/rtmdet_infer.py](./inference/mm/rtmdet_infer.py)

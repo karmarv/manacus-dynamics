@@ -1,3 +1,0 @@
-label,label_id,points,type,confidence,frame_id
-Male,0,"[1505, 333, 1568, 383]",rectangle,0.74802804,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg
-Female,1,"[735, 314, 840, 385]",rectangle,0.43735504,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg

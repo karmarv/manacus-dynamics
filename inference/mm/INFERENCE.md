@@ -18,6 +18,9 @@
 
 #### 2. Configure the inference script
 - Ensure that the `*.onnx` file is available locally in the deploy folder.
+  - v0.1: `wget https://github.com/karmarv/manacus-dynamics/releases/download/v0.1/rtmdet_s_b16_e100.onnx`
+  - v0.2: `wget https://github.com/karmarv/manacus-dynamics/releases/download/v0.2/` 
+
 
 #### 3. Run inference 
 (a.) Video model inference on a frame by frame basis for a sample video in deploy folder

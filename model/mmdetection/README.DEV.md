@@ -104,25 +104,70 @@ CUDA_VISIBLE_DEVICES=0 PORT=29601 ./tools/dist_train.sh rtmdet_s_manacus.py 1
   CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_allaug.py 4
   ```
   - [In-progress]
-
+- Run 3 - tenth the learning rate and training for e100. Estimated 1 day
+  ```
+  CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_allaug.py 4
+  ```
+- Run 4 - removed switch, allaug, b16, halved the learning rate and training for e200. Estimated 2 day
+  ```
+  CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29601 ./tools/dist_train.sh rtmdet_m_manacus_r1_noswitch.py 4
+  ```
+    - Weights work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/best_coco_bbox_mAP_epoch_135.pth 
+    ```
+    +----------+-------+--------+--------+-------+-------+-------+
+    | category | mAP   | mAP_50 | mAP_75 | mAP_s | mAP_m | mAP_l |
+    +----------+-------+--------+--------+-------+-------+-------+
+    | Male     | 0.748 | 0.96   | 0.844  | 0.013 | 0.706 | 0.806 |
+    | Female   | 0.74  | 0.971  | 0.871  | 0.0   | 0.725 | 0.78  |
+    | Unknown  | 0.0   | 0.0    | 0.0    | 0.0   | 0.0   | nan   |
+    +----------+-------+--------+--------+-------+-------+-------+
+    ```
+  - Test
+    ```
+    CUDA_VISIBLE_DEVICES=0 python ./tools/test.py rtmdet_m_manacus_r1_noswitch.py work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/best_coco_bbox_mAP_epoch_135.pth --show-dir show-dir
+    ```
+    ```
+    In progress
+    ```
+- Run 5 - removed switch, noaug, b16, halved the learning rate and training for e200. Estimated 2 day
+  ```
+  CUDA_VISIBLE_DEVICES=0,1,2,3 PORT=29602 ./tools/dist_train.sh rtmdet_m_manacus_r1_noswitch.py 4
+  ```
 ### Deploy for inference
-```
-pip install onnx onnx-simplifier
-python ./projects/easydeploy/tools/export_onnx.py rtmdet_s_manacus.py \
-  ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth \
-	--work-dir ./work_dirs/rtmdet_s_manacus_r1/deploy/ \
-  --img-size 640 640 --batch 1 --device cpu \
-	--iou-threshold 0.65 \
-	--score-threshold 0.25
-```
-- export logs
-  ```
-  Export ONNX with bbox decoder and NMS ...
-  Loads checkpoint by local backend from path: ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth
-  ============= Diagnostic Run torch.onnx.export version 2.0.1+cu118 =============
-  verbose: False, log level: Level.ERROR
-  ======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
 
-  ONNX export success, save into ./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx
+- `v0.1` MMYolo release https://github.com/karmarv/manacus-dynamics/releases/tag/v0.1
   ```
-- Netron image of the exported ONNX model - [./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png](./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png)
+  pip install onnx onnx-simplifier
+  python ./projects/easydeploy/tools/export_onnx.py rtmdet_s_manacus.py \
+    ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth \
+    --work-dir ./work_dirs/rtmdet_s_manacus_r1/deploy/ \
+    --img-size 640 640 --batch 1 --device cpu \
+    --iou-threshold 0.65 \
+    --score-threshold 0.25
+  ```
+  - export logs
+    ```
+    Export ONNX with bbox decoder and NMS ...
+    Loads checkpoint by local backend from path: ./work_dirs/rtmdet_s_manacus_r1/epoch_100.pth
+    ============= Diagnostic Run torch.onnx.export version 2.0.1+cu118 =============
+    verbose: False, log level: Level.ERROR
+    ======================= 0 NONE 0 NOTE 0 WARNING 0 ERROR ========================
+
+    ONNX export success, save into ./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx
+    ```
+  - Netron image of the exported ONNX model - [./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png](./work_dirs/rtmdet_s_manacus_r1/deploy/epoch_100.onnx.png)
+
+- `v0.2` MMDet release - https://mmdeploy.readthedocs.io/en/latest/04-supported-codebases/mmdet.html#install-mmdeploy
+  ```
+  python tools/deploy.py \
+    configs/mmdet/detection/detection_onnxruntime_dynamic.py \
+    ../mmdetection/work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/rtmdet_m_manacus_r1_noswitch.py \
+    ../mmdetection/work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/best_coco_bbox_mAP_epoch_135.pth \
+    ../../inference/mm/deploy/frame_000830.PNG \
+    --work-dir ../mmdetection/work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/ort \
+    --device cpu \
+    --show \
+    --dump-info
+
+  cp ../mmdetection/work_dirs/rtmdet_m_r1_noswitch_allaug_b16_e200/ort/end2end.onnx ../../inference/mm/deploy/rtmdet_m_r1_noswitch_allaug_b16_e135.onnx
+  ```
