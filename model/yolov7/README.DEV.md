@@ -103,7 +103,9 @@ python train.py --workers 16 --device 0 --batch-size 16 --data data/manacus.yaml
 - fcat-manacus-v2: Sample 10 videos male/female stationary track labeling
   - Link: http://vader.ece.ucsb.edu:8080/projects/6?page=1
   - COCO 1.0 project export format for model evaluation
-- fcat-manacus-v3: TODO with 239 video labeling
+- fcat-manacus-v3: 239 video labeling
+- fcat-manacus-v4: Interpolated extraction of track labels
+- fcat-manacus-v5: eBird data combined with v4 dataset
 
 ### (.) Yolov7 - `Stage 2` manacus detection model
 
@@ -157,13 +159,14 @@ Training logs on W&B - https://wandb.ai/karmar/Yv7-Manacus
 
 --- 
 
-Training on larger video labeled dataset 
+Training on larger video labeled dataset: v4 -> ./dataset/fcat/yolo/fcat-manacus-v4-inter/
 ```
 export CUDA_VISIBLE_DEVICES=0,1,2,3  
+
 ```
 - https://wandb.ai/karmar/Yv7-Manacus
 
-- [d4-r1-fcat-b16-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
+- [v4-r1-fcat-b16-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 0 --batch-size 16 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r1-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
@@ -177,7 +180,7 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
   200 epochs completed in 112.720 hours.
   ```
 
-- [d4-r2-fcat-b64-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
+- [v4-r2-fcat-b64-640w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 1 --batch-size 64 --data data/manacus-fcat.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r2-fcat-b64-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
@@ -191,15 +194,27 @@ export CUDA_VISIBLE_DEVICES=0,1,2,3
   200 epochs completed in 111.019 hours
   ```
 
-- [d4-r3-fcat-b16-1280w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
+- [v4-r3-fcat-b16-1280w] train v7 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train.py --workers 8 --device 2 --batch-size 16 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name d4-r3-fcat-b16-1280w --hyp data/hyp.scratch.p5.yaml --epochs 200
   ```
   - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/cgv3l6zu
 
-- [d4-r4-fcat-b16-1280w-w6] train yolov7-w6 models with V4-inter YOLO dataset [Nov/06/2024]
+- [v4-r4-fcat-b16-1280w-w6] train yolov7-w6 models with V4-inter YOLO dataset [Nov/06/2024]
   ```bash
   python train_aux.py --workers 8 --device 3 --batch-size 16 --data data/manacus-fcat.yaml --img 1280 1280 --cfg cfg/training/yolov7-w6-manacus.yaml --weights 'yolov7-w6.pt' --name d4-r4-fcat-b16-1280w-w6 --hyp data/hyp.scratch.p5.yaml --epochs 200 
   ```
   -  🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/sakogsq
 
+
+Training on larger video labeled dataset: v5 -> ./dataset/fcat/yolo/fcat-manacus-v5-fcat-ebird/
+- [v5-r1-fcat-b16-640w] train v7 models with v5 YOLO dataset [Dec/04/2024]
+  ```bash
+  python train.py --workers 8 --device 0 --batch-size 16 --data data/manacus-fcat-v5.yaml --img 640 640 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name v5-r1-fcat-b16-640w --hyp data/hyp.scratch.p5.yaml --epochs 200
+  ```
+  - 🚀 View run at https://wandb.ai/karmar/Yv7-Manacus/runs/ek3vy5vc
+
+- [v5-r3-fcat-b16-1280w] train v7 models with V5 YOLO dataset [Dec/04/2024]
+  ```bash
+  python train.py --workers 8 --device 2 --batch-size 12 --data data/manacus-fcat-v5.yaml --img 1280 1280 --cfg cfg/training/yolov7-manacus.yaml --weights 'yolov7.pt' --name v5-r3-fcat-b12-1280w --hyp data/hyp.scratch.p5.yaml --epochs 200
+  ```

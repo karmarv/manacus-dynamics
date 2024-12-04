@@ -164,9 +164,21 @@ def merge_multi_segment(segments):
                     s.append(segments[i][nidx:])
     return s
 
+"""
+Usage: modify the data_base_dir variable to point to the base COCO dataset
+python dataset_coco_yolofy.py 
 
+# Sample Output
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/train.json: 100%|█████████████████████████| 156363/156363 [00:17<00:00, 9186.95it/s]
+    156363it [00:54, 2894.28it/s]
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/val.json: 100%|███████████████████████████| 19546/19546 [00:02<00:00, 9275.30it/s]
+    19546it [00:07, 2498.88it/s]
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/test.json: 100%|██████████████████████████| 19547/19547 [00:01<00:00, 10278.11it/s]
+    19547it [00:07, 2507.83it/s]
+"""
 if __name__ == "__main__":
-    data_base_dir="./coco/fcat-manacus-v4-inter"
+    #data_base_dir="./coco/fcat-manacus-v4-inter"
+    data_base_dir="./coco/fcat-manacus-v5-fcat-ebird"
     # Train
     convert_yolov7(json_file=data_base_dir+"/annotations/train.json", data_type="train")
     copy_images(src_folder=data_base_dir+"/train/images", data_type="train", symlink=True)
