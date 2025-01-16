@@ -178,3 +178,6 @@ inference/**/*.MP4
 inference/**/*.mp4
 dataset/fcat/coco/*
 dataset/fcat/yolo/*
+model/ultralytics/ul-yolo/** 
+model/ultralytics/wandb/**
+model/ultralytics/*.pt
