@@ -282,7 +282,7 @@ if __name__ == "__main__":
     parser.add_argument("--image",       type=str,      default=None,  help="Path where image file is located")
     parser.add_argument("--model",       type=str,      default="./deploy/best.onnx",  help="Path where ONNX model is located")
 
-    parser.add_argument("--out-suffix",  type=str,      default="v02.result",  help="Result filename suffix")
+    parser.add_argument("--out-suffix",  type=str,      default="v03.result",  help="Result filename suffix")
     parser.add_argument("--out-path",    type=str,      default="./results",  help="Result output path")
 
     parser.add_argument("--conf-thres",  type=float,    default=0.5, help="Confidence threshold")

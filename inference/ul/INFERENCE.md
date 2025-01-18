@@ -18,34 +18,48 @@
 #### 2. Configure the inference script
 - Ensure that the `*.onnx` file is available locally in the deploy folder.
   ```bash
-  wget https://github.com/karmarv/manacus-dynamics/releases/download/v0.2/v02_rtmdet_m_r1_noswitch_allaug_b16_e135.onnx
+  wget [TODO]
   ``` 
 
 
 #### 3. Run inference 
-(a.) Image model inference on a sample in deploy folder
+(a.) Image model inference on a sample image in deploy folder
 ```bash
-time python rtmdet_infer.py --view-debug --image "./deploy/frame_000830.PNG"
+time python yolo_infer.py --view-debug --image "./deploy/frame_000830.PNG"
 ```
 - expected output at [./results/frame_000830.PNG.v02.result.jpg](./results/frame_000830.PNG.v02.result.jpg)
   ```log
-  2024-12-02 14:05:35.424617 - Process Image: ./deploy/frame_000830.PNG
-  Results:  [{'label': 'Female', 'label_id': 1, 'box_xtl': 732, 'box_ytl': 266, 'box_xbr': 843, 'box_ybr': 357, 'confidence': 0.74782014}, 
-             {'label': 'Male',   'label_id': 0, 'box_xtl': 1488, 'box_ytl': 318, 'box_xbr': 1560, 'box_ybr': 385, 'confidence': 0.5209318}]
-  2024-12-02 14:05:36.027195 - 2 results written to ./results/frame_000830.PNG.v02.result.csv
+  
+  2025-01-17 17:32:27.786762 - Process Image: ./deploy/frame_000830.PNG
+  2025-01-17 17:32:28.281782 - 2 results written to ./results/frame_000830.PNG.v02.result.csv
 
-  real    0m3.045s
+  real    0m2.827s
+  user    1m3.455s
+  sys     0m1.776s
   ``` 
 (b.) Video model inference on a frame by frame basis for a sample video in deploy folder
 ```bash
-time python rtmdet_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
+cd ~/manacus-dynamics/inference/ul
+time python yolo_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
 ```
 - expected output at [./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv](./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv)
   ```log
-  2024-12-02 13:18:00.229832 - Process Video: ./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
-  FPS:60.00, (Frames: 1815),       Video:./deploy/LM.P4_1.8.22-1.13.22_0127.MP4 
-  100%|██████████████████████████████████████████████████████████████████| 1815/1815 [08:53<00:00,  3.40it/s]
-  2024-12-02 13:26:54.095636 - 3362 results written to ./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.mp4
+  2025-01-17 17:42:35.070423 - Process Video: ./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
+  FPS:60.00, (Frames: 1815),       Video:./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
+  100%|████████████████████████████████████████████████████████| 1815/1815 [09:19<00:00,  3.24it/s]
+  2025-01-17 17:51:55.233192 - 1185 results written to ./results/LM.P4_1.8.22-1.13.22_0127.MP4
 
-  real    8m56.279s
+  real    9m22.585s
+  user    956m21.971s
+  sys     1m44.975s
   ```
+(c.) Run inference on multiple videos using bash script
+- Prepare video list and run bash script
+```bash
+TEST_VIDEOS_PATH="/home/rahul/workspace/vision/manacus-dynamics/dataset/fcat/box/test_videos"
+find ${TEST_VIDEOS_PATH} -type f > run_batch_test_videos.list
+```
+```bash
+bash run_batch.bash run_batch_test_videos.list
+```
+- expect output files in results folder
