@@ -4,6 +4,7 @@ supervision
 ultralytics>=8.3.0
 onnx
 
---extra-index-url https://download.pytorch.org/whl/cu124
+#--extra-index-url https://download.pytorch.org/whl/cu124
+--extra-index-url https://download.pytorch.org/whl/cu118
 torch==2.4.1
 torchvision==0.19.1
