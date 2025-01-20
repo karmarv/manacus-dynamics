@@ -77,6 +77,10 @@
     Unknown         24         24          1      0.214      0.391      0.244
     Speed: 0.4ms preprocess, 1.7ms inference, 0.0ms loss, 2.0ms postprocess per image
     ```
+  - Export 
+  ```bash
+  yolo export model=ul-yolo/y11m-dv5-default-train/weights/best.pt format=onnx 
+  ```
 
 #### Run 2
 - Config: https://github.com/ultralytics/ultralytics/blob/main/ultralytics/cfg/default.yaml
@@ -89,6 +93,23 @@
   ```bash
   # Fri Jan 17 07:45:26 PM PST 2025
   yolo train data=coco8-fcat-v5.yaml model=yolo11m.pt project="ul-yolo" name="train" epochs=100
+  ```
+  - Val
+  ```bash
+  100 epochs completed in 44.728 hours.
+  Optimizer stripped from ul-yolo/train/weights/last.pt, 40.5MB
+  Optimizer stripped from ul-yolo/train/weights/best.pt, 40.5MB
+
+  Validating ul-yolo/train/weights/best.pt...
+  Ultralytics 8.3.61 🚀 Python-3.10.16 torch-2.4.1+cu124 CUDA:0 (NVIDIA RTX 6000 Ada Generation, 48539MiB)
+  YOLO11m summary (fused): 303 layers, 20,032,345 parameters, 0 gradients, 67.7 GFLOPs
+    Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 611/611 [01:03<00:00,  9.61it/s]
+      all      19546      26448      0.965      0.903      0.925      0.861
+     Male      13393      13494      0.978      0.978      0.991      0.952
+   Female      12732      12930      0.982      0.981      0.992      0.948
+  Unknown         24         24      0.936       0.75      0.792      0.684
+  Speed: 0.3ms preprocess, 0.8ms inference, 0.0ms loss, 0.5ms postprocess per image
+  Results saved to ul-yolo/train
   ```
 
 ### YoloV11-Large
@@ -116,7 +137,10 @@
   Speed: 0.4ms preprocess, 1.8ms inference, 0.0ms loss, 1.3ms postprocess per image
   Results saved to ul-yolo/y11l-dv5-default-train
   ```
-
+  - Export 
+  ```bash
+  yolo export model=./ul-yolo/y11l-dv5-default-train/weights/best.pt format=onnx 
+  ```
 #### Run 2
 - Train (100 epochs)
   - CLI 
