@@ -1,0 +1,3 @@
+label_id,label_name,confidence,box_xtl,box_ytl,box_xbr,box_ybr,frame_id
+1,Female,0.67969865,735,266,841,356,./deploy/frame_000830.PNG
+0,Male,0.641493,1501,329,1568,384,./deploy/frame_000830.PNG

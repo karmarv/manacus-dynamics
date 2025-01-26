@@ -14,9 +14,29 @@
   ```bash
   pip install -r requirements.txt
   ```
+  - GPU related [instructions on onnruntime-gpu](https://onnxruntime.ai/docs/install/#install-onnx-runtime-gpu-cuda-12x)
+    ```bash
+    pip uninstall onnxruntime
+    pip install onnxruntime-gpu
+    export CUDA_VISIBLE_DEVICES=0
+    ```
 
 #### 2. Configure the inference script
-- Ensure that the `*.onnx` file is available locally in the deploy folder.
+- python yolo_infer.py --help
+
+  | Argument (with Default)                            | Description                                              |
+  | :------------------------------------------------- | :------------------------------------------------------- |
+  | `--model "./deploy/best_y11m-dv5-e100-train.onnx"` | Path where ONNX model is located                         |
+  | `--video VIDEO`                                    | Path where video file is located                         |
+  | `--image IMAGE`                                    | Path where image file is located (Not in use for videos) |
+  | `--out-suffix "v03.result"`                        | Result filename suffix                                   |
+  | `--out-path "./results"`                           | Result output folder                                     |
+  | `--conf-thres 0.5`                                 | Confidence threshold                                     |
+  | `--iou-thres 0.5`                                  | NMS IoU threshold                                        |
+  | `--view-debug`                                     | Write qualitative intermediate results                   |
+
+
+- Ensure that the `*.onnx` model file is downloaded in the deploy folder.
   ```bash
   wget [TODO]
   ``` 
@@ -44,16 +64,16 @@ time python yolo_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_01
 ```
 - expected output at [./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv](./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv)
   ```log
-  2025-01-17 17:42:35.070423 - Process Video: ./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
+  2025-01-25 08:31:24.726102 - Process Video: ./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
   FPS:60.00, (Frames: 1815),       Video:./deploy/LM.P4_1.8.22-1.13.22_0127.MP4
-  100%|████████████████████████████████████████████████████████| 1815/1815 [09:19<00:00,  3.24it/s]
-  2025-01-17 17:51:55.233192 - 1185 results written to ./results/LM.P4_1.8.22-1.13.22_0127.MP4
+  100%|████████████████████████████████████| 1815/1815 [06:18<00:00,  4.80it/s]
+  2025-01-25 08:37:43.305377 - 932 results written to ./results/LM.P4_1.8.22-1.13.22_0127.MP4
 
-  real    9m22.585s
-  user    956m21.971s
-  sys     1m44.975s
+  real    6m25.005s
+  user    13m13.027s
+  sys     1m12.294s
   ```
-(c.) Run inference on multiple videos using bash script
+(c.) Run inference on multiple videos using a bash script
 - Prepare video list and run bash script
 ```bash
 TEST_VIDEOS_PATH="/home/rahul/workspace/vision/manacus-dynamics/dataset/fcat/box/test_videos"
@@ -62,4 +82,4 @@ find ${TEST_VIDEOS_PATH} -type f > run_batch_test_videos.list
 ```bash
 bash run_batch.bash run_batch_test_videos.list
 ```
-- expect output files in results folder
+- expect output files in results folder as configured in the bash script

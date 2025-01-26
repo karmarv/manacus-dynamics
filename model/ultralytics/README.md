@@ -39,7 +39,7 @@
   python train_yolo11m.py
   ```
     - Val Run (10 epochs)
-    ```bash
+    ```log
     Ultralytics 8.3.61 🚀 Python-3.10.16 torch-2.4.1+cu124 CUDA:3 (NVIDIA RTX 6000 Ada Generation, 48539MiB)
     YOLO11m summary (fused): 303 layers, 20,032,345 parameters, 0 gradients, 67.7 GFLOPs
     val: Scanning /home/rahul/workspace/vision/manacus-dynamics/dataset/fcat/yolo/fcat-manacus-v5-fcat-ebird/labels/val.cache... 19546 images, 0 backgrounds, 0 corrupt: 100%|██████████| 19546/19546 [00:00<?, ?it/
@@ -59,10 +59,10 @@
     ```
   - CLI
   ```bash
-  yolo train data=coco8-fcat-v5.yaml model=yolo11m.pt project="ul-yolo" epochs=10
+  yolo train data=coco8-fcat-v5.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv5-default-train" epochs=10
   ```
     - Val
-    ```bash
+    ```log
     10 epochs completed in 8.133 hours.
     Optimizer stripped from ul-yolo/train/weights/last.pt, 40.5MB
     Optimizer stripped from ul-yolo/train/weights/best.pt, 40.5MB
@@ -92,10 +92,10 @@
   - CLI 
   ```bash
   # Fri Jan 17 07:45:26 PM PST 2025
-  yolo train data=coco8-fcat-v5.yaml model=yolo11m.pt project="ul-yolo" name="train" epochs=100
+  yolo train data=coco8-fcat-v5.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv5-e100-train" epochs=100
   ```
   - Val
-  ```bash
+  ```log
   100 epochs completed in 44.728 hours.
   Optimizer stripped from ul-yolo/train/weights/last.pt, 40.5MB
   Optimizer stripped from ul-yolo/train/weights/best.pt, 40.5MB
@@ -111,7 +111,10 @@
   Speed: 0.3ms preprocess, 0.8ms inference, 0.0ms loss, 0.5ms postprocess per image
   Results saved to ul-yolo/train
   ```
-
+  - Export 
+  ```bash
+  yolo export model=./ul-yolo/y11m-dv5-e100-train/weights/best.pt format=onnx 
+  ```
 ### YoloV11-Large
 
 #### Run 1
@@ -121,7 +124,7 @@
   # Fri Jan 17 07:45:26 PM PST 2025
   yolo train data=coco8-fcat-v5.yaml model=yolo11l.pt project="ul-yolo" name="y11l-dv5-default-train" epochs=10
   ```
-  ```bash
+  ```log
   10 epochs completed in 7.354 hours.
   Optimizer stripped from ul-yolo/y11l-dv5-default-train/weights/last.pt, 51.2MB
   Optimizer stripped from ul-yolo/y11l-dv5-default-train/weights/best.pt, 51.2MB
@@ -148,7 +151,26 @@
   # Fri Jan 17 07:45:26 PM PST 2025
   yolo train data=coco8-fcat-v5.yaml model=yolo11l.pt project="ul-yolo" name="y11l-dv5-e100-train" epochs=100 device=3
   ```
+  ```log
+  100 epochs completed in 48.093 hours.
+  Optimizer stripped from ul-yolo/y11l-dv5-e100-train/weights/last.pt, 51.2MB
+  Optimizer stripped from ul-yolo/y11l-dv5-e100-train/weights/best.pt, 51.2MB
 
+  Validating ul-yolo/y11l-dv5-e100-train/weights/best.pt...
+  Ultralytics 8.3.63 🚀 Python-3.10.16 torch-2.4.1+cu118 CUDA:2 (NVIDIA RTX 6000 Ada Generation, 48539MiB)
+  YOLO11l summary (fused): 464 layers, 25,281,625 parameters, 0 gradients, 86.6 GFLOPs
+    Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 611/611 [01:00<00:00, 10.05it/s]
+      all      19546      26448      0.947      0.896      0.927      0.853
+     Male      13393      13494      0.969      0.986      0.991      0.954
+   Female      12732      12930      0.977      0.987      0.992      0.951
+  Unknown         24         24      0.895      0.713      0.797      0.655
+  Speed: 0.1ms preprocess, 1.0ms inference, 0.0ms loss, 0.5ms postprocess per image
+  Results saved to ul-yolo/y11l-dv5-e100-train
+  ```
+  - Export 
+  ```bash
+  yolo export model=./ul-yolo/y11l-dv5-e100-train/weights/best.pt format=onnx 
+  ```
 
 # Issues 
 - Ultralytics Yolo11 Distributed training config `device=2,3` not working with Pytorch 2.4.1 + CUDA 11.8 or 12.4/12.6

@@ -271,8 +271,8 @@ Input: Video
     - time python yolo_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
 
 - Intermediate output with switch '--view-debug':
-    - *.v02.result.{jpg or mp4} : Video with bounding box draw inframe
-    - *.v02.result.csv          : CSV file with frame recognition information written in rows
+    - *.v03.result.{jpg or mp4} : Video with bounding box draw inframe
+    - *.v03.result.csv          : CSV file with frame recognition information written in rows
 
 """
 if __name__ == "__main__":
@@ -280,7 +280,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--video",       type=str,      default=None,  help="Path where video file is located")
     parser.add_argument("--image",       type=str,      default=None,  help="Path where image file is located")
-    parser.add_argument("--model",       type=str,      default="./deploy/best.onnx",  help="Path where ONNX model is located")
+    parser.add_argument("--model",       type=str,      default="./deploy/best_y11m-dv5-default-e10.onnx",  help="Path where ONNX model is located")
 
     parser.add_argument("--out-suffix",  type=str,      default="v03.result",  help="Result filename suffix")
     parser.add_argument("--out-path",    type=str,      default="./results",  help="Result output path")
