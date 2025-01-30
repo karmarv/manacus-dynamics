@@ -5,6 +5,7 @@
   t=ultralytics/ultralytics:latest && docker pull $t && docker run -it --ipc=host --gpus all -v "$(pwd)":"/ultralytics/code" -v "/home/rahul/workspace/vision/manacus-dynamics/dataset/fcat":"/datasets" $t
   ```
 
+
 ### Python Env 
   ```
   conda env remove -n ulyolo -y
@@ -12,6 +13,13 @@
   conda activate ulyolo
 
   pip install -r requirements.txt
+  
+
+  # Install the required packages for Ultralytics YOLO and Weights & Biases
+  pip install -U wandb
+
+  # Enable W&B logging for Ultralytics - https://docs.ultralytics.com/integrations/weights-biases/#how-do-i-integrate-weights-biases-with-ultralytics-yolo11
+  yolo settings wandb=True
   wandb login
   ```
 - Environment variables
@@ -115,6 +123,18 @@
   ```bash
   yolo export model=./ul-yolo/y11m-dv5-e100-train/weights/best.pt format=onnx 
   ```
+#### Run 3 - Male & Female labels only dataset
+- Train (100 epochs)
+  - CLI 
+  ```bash
+  # Fri Jan 30 07:45:26 AM PST 2025
+  yolo train data=coco8-fcat-v6.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv6-e100-train" epochs=100 save_period=1 device=0
+  ```
+  ```log
+  Inprogress
+  ```
+  
+
 ### YoloV11-Large
 
 #### Run 1
@@ -171,6 +191,18 @@
   ```bash
   yolo export model=./ul-yolo/y11l-dv5-e100-train/weights/best.pt format=onnx 
   ```
+
+#### Run 3 - Male & Female labels only dataset
+- Train (100 epochs)
+  - CLI 
+  ```bash
+  # Fri Jan 30 07:45:26 AM PST 2025
+  yolo train data=coco8-fcat-v6.yaml model=yolo11l.pt project="ul-yolo" name="y11l-dv6-e100-train" epochs=100 save_period=1 device=2
+  ```
+  ```log
+  Inprogress
+  ```
+
 
 # Issues 
 - Ultralytics Yolo11 Distributed training config `device=2,3` not working with Pytorch 2.4.1 + CUDA 11.8 or 12.4/12.6

@@ -22,7 +22,7 @@ MANACUS_CLASS_LABELS={
     # gts_header = ['class', 'bb_x_center', 'bb_y_center', 'bb_width', 'bb_height', 'visibility']
     row  = [shape_item['frame'], label_id, bb_xcen/width, bb_ycen/height, bb_width/width, bb_height/height]
 """
-def convert_yolov7(json_file, data_type, use_segments=False):
+def convert_yolov7(json_file, data_type, use_segments=False, filter_class_labels=None):
     path_labels = Path().resolve() / "yolo" / "labels" / data_type      # target folder
     path_labels.mkdir(parents=True, exist_ok=True)
     
@@ -52,6 +52,9 @@ def convert_yolov7(json_file, data_type, use_segments=False):
             box[[0, 2]] /= w  # normalize x
             box[[1, 3]] /= h  # normalize y
             if box[2] <= 0 or box[3] <= 0:  # if w <= 0 and h <= 0
+                continue
+            
+            if ann["category_id"] not in filter_class_labels:      # Skip category_id not in filter list
                 continue
 
             cls = ann["category_id"] - 1  # class
@@ -168,25 +171,35 @@ def merge_multi_segment(segments):
 Usage: modify the data_base_dir variable to point to the base COCO dataset
 python dataset_coco_yolofy.py 
 
-# Sample Output
+# Sample Output V5 export with 3 labels
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/train.json: 100%|█████████████████████████| 156363/156363 [00:17<00:00, 9186.95it/s]
     156363it [00:54, 2894.28it/s]
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/val.json: 100%|███████████████████████████| 19546/19546 [00:02<00:00, 9275.30it/s]
     19546it [00:07, 2498.88it/s]
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/test.json: 100%|██████████████████████████| 19547/19547 [00:01<00:00, 10278.11it/s]
     19547it [00:07, 2507.83it/s]
+
+# Sample V6 export with 2 labels
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/train.json: 100%|█████████████████████████| 156363/156363 [00:14<00:00, 10568.90it/s]
+    156363it [00:54, 2880.80it/s]
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/val.json: 100%|███████████████████████████| 19546/19546 [00:01<00:00, 11295.50it/s]
+    19546it [00:07, 2667.98it/s]
+    Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/test.json: 100%|██████████████████████████| 19547/19547 [00:01<00:00, 11442.12it/s]
+    19547it [00:07, 2671.44it/s]
+
 """
 if __name__ == "__main__":
     #data_base_dir="./coco/fcat-manacus-v4-inter"
     data_base_dir="./coco/fcat-manacus-v5-fcat-ebird"
+    class_ids = [MANACUS_CLASS_LABELS["Male"]["id"], MANACUS_CLASS_LABELS["Female"]["id"]]
     # Train
-    convert_yolov7(json_file=data_base_dir+"/annotations/train.json", data_type="train")
+    convert_yolov7(json_file=data_base_dir+"/annotations/train.json", data_type="train", use_segments=False, filter_class_labels=class_ids)
     copy_images(src_folder=data_base_dir+"/train/images", data_type="train", symlink=True)
 
     # Val
-    convert_yolov7(json_file=data_base_dir+"/annotations/val.json", data_type="val")
+    convert_yolov7(json_file=data_base_dir+"/annotations/val.json", data_type="val", use_segments=False, filter_class_labels=class_ids)
     copy_images(src_folder=data_base_dir+"/val/images", data_type="val", symlink=True)
 
     # Test
-    convert_yolov7(json_file=data_base_dir+"/annotations/test.json", data_type="test")
+    convert_yolov7(json_file=data_base_dir+"/annotations/test.json", data_type="test", use_segments=False, filter_class_labels=class_ids)
     copy_images(src_folder=data_base_dir+"/test/images", data_type="test", symlink=True)
