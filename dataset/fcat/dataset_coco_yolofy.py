@@ -171,7 +171,7 @@ def merge_multi_segment(segments):
 Usage: modify the data_base_dir variable to point to the base COCO dataset
 python dataset_coco_yolofy.py 
 
-# Sample Output V5 export with 3 labels
+# Sample Output V5 export with 3 labels (dataset/fcat/yolo/fcat-manacus-v5-fcat-ebird)
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/train.json: 100%|█████████████████████████| 156363/156363 [00:17<00:00, 9186.95it/s]
     156363it [00:54, 2894.28it/s]
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/val.json: 100%|███████████████████████████| 19546/19546 [00:02<00:00, 9275.30it/s]
@@ -179,7 +179,7 @@ python dataset_coco_yolofy.py
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/test.json: 100%|██████████████████████████| 19547/19547 [00:01<00:00, 10278.11it/s]
     19547it [00:07, 2507.83it/s]
 
-# Sample V6 export with 2 labels
+# Sample V6 export with 2 labels (dataset/fcat/yolo/fcat-manacus-v6-fcat-ebird-mf)
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/train.json: 100%|█████████████████████████| 156363/156363 [00:14<00:00, 10568.90it/s]
     156363it [00:54, 2880.80it/s]
     Annotations ./coco/fcat-manacus-v5-fcat-ebird/annotations/val.json: 100%|███████████████████████████| 19546/19546 [00:01<00:00, 11295.50it/s]
