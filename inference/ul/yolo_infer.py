@@ -280,7 +280,7 @@ if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--video",       type=str,      default=None,  help="Path where video file is located")
     parser.add_argument("--image",       type=str,      default=None,  help="Path where image file is located")
-    parser.add_argument("--model",       type=str,      default="./deploy/best_y11m-dv5-default-e10.onnx",  help="Path where ONNX model is located")
+    parser.add_argument("--model",       type=str,      default="./deploy/y11m-dv6-e25-im1280.onnx",  help="Path where ONNX model is located")
 
     parser.add_argument("--out-suffix",  type=str,      default="v03.result",  help="Result filename suffix")
     parser.add_argument("--out-path",    type=str,      default="./results",  help="Result output path")

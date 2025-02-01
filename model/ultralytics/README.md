@@ -128,12 +128,33 @@
   - CLI 
   ```bash
   # Fri Jan 30 07:45:26 AM PST 2025
-  yolo train data=coco8-fcat-v6.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv6-e100-train" epochs=100 save_period=1 device=0
+  yolo train data=coco8-fcat-v6.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv6-e100-train" epochs=100 save_period=1 device=1
+  ```
+  ```log
+  100 epochs completed in 35.572 hours.
+  Optimizer stripped from ul-yolo/y11m-dv6-e100-train/weights/last.pt, 40.5MB
+  Optimizer stripped from ul-yolo/y11m-dv6-e100-train/weights/best.pt, 40.5MB
+  
+  Validating ul-yolo/y11m-dv6-e100-train/weights/best.pt...
+  Ultralytics 8.3.63 🚀 Python-3.10.16 torch-2.4.1+cu118 CUDA:1 (NVIDIA RTX 6000 Ada Generation, 48539MiB)
+  YOLO11m summary (fused): 303 layers, 20,031,574 parameters, 0 gradients, 67.7 GFLOPs
+    Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   5%|▍         | 30/611 [00:03<00:57, 10.08it/s]
+      all      19546      26424      0.979      0.983      0.991      0.951
+     Male      13393      13494      0.976      0.982      0.991      0.953
+   Female      12732      12930      0.983      0.984      0.992      0.949
+  Speed: 0.3ms preprocess, 0.8ms inference, 0.0ms loss, 0.5ms postprocess per image
+  Results saved to ul-yolo/y11m-dv6-e100-train
+  ```
+  
+- Train Size=1280 (100 epochs)
+  - CLI 
+  ```bash
+  # Fri Jan 30 11:15:26 AM PST 2025
+  yolo train data=coco8-fcat-v6.yaml model=yolo11m.pt project="ul-yolo" name="y11m-dv6-e100-im1280" epochs=100 save_period=1 imgsz=1280 device=0
   ```
   ```log
   Inprogress
   ```
-  
 
 ### YoloV11-Large
 
@@ -200,9 +221,30 @@
   yolo train data=coco8-fcat-v6.yaml model=yolo11l.pt project="ul-yolo" name="y11l-dv6-e100-train" epochs=100 save_period=1 device=2
   ```
   ```log
+  100 epochs completed in 41.759 hours.
+  Optimizer stripped from ul-yolo/y11l-dv6-e100-train/weights/last.pt, 51.2MB
+  Optimizer stripped from ul-yolo/y11l-dv6-e100-train/weights/best.pt, 51.2MB
+  
+  Validating ul-yolo/y11l-dv6-e100-train/weights/best.pt...
+  Ultralytics 8.3.63 🚀 Python-3.10.16 torch-2.4.1+cu118 CUDA:2 (NVIDIA RTX 6000 Ada Generation, 48539MiB)
+  YOLO11l summary (fused): 464 layers, 25,280,854 parameters, 0 gradients, 86.6 GFLOPs
+    Class     Images  Instances      Box(P          R      mAP50  mAP50-95):   0%|          | 1/611 [00:00<02:13,  4.57it/s]
+      all      19546      26424      0.979      0.983      0.992      0.953
+     Male      13393      13494      0.976      0.981      0.991      0.955
+   Female      12732      12930      0.982      0.984      0.992      0.951
+  Speed: 0.1ms preprocess, 1.0ms inference, 0.0ms loss, 0.5ms postprocess per image
+  Results saved to ul-yolo/y11l-dv6-e100-train
+  ```
+  
+- Train Size=1280 (100 epochs)
+  - CLI 
+  ```bash
+  # Fri Jan 30 11:15:26 AM PST 2025
+  yolo train data=coco8-fcat-v6.yaml model=yolo11l.pt project="ul-yolo" name="y11l-dv6-e100-im1280" epochs=100 save_period=1 imgsz=1280 device=3
+  ```
+  ```log
   Inprogress
   ```
-
 
 # Issues 
 - Ultralytics Yolo11 Distributed training config `device=2,3` not working with Pytorch 2.4.1 + CUDA 11.8 or 12.4/12.6

@@ -1,3 +1,0 @@
-label_id,label_name,confidence,box_xtl,box_ytl,box_xbr,box_ybr,frame_id
-1,Female,0.7357804,737,312,845,381,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg
-0,Male,0.65889496,1504,329,1574,381,./deploy/LM.P4_1.8.22-1.13.22_0127.MP4-00000144.jpg

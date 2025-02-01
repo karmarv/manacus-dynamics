@@ -181,7 +181,7 @@ dataset/fcat/yolo/*
 model/ultralytics/ul-yolo/** 
 model/ultralytics/wandb/**
 model/ultralytics/*.pt
-inference/ul/run_y11m_e10_results
-inference/ul/run_y11l_e10_results
-inference/ul/run_y11m_e100_results
-inference/ul/run_y11l_e100_results
+inference/ul/run
+inference/ul/results
+inference/ul/run_y11l-dv6-e25-im1280_results
+inference/ul/run_y11m-dv6-e25-im1280_results

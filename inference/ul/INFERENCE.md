@@ -26,7 +26,7 @@
 
   | Argument (with Default)                            | Description                                              |
   | :------------------------------------------------- | :------------------------------------------------------- |
-  | `--model "./deploy/best_y11m-dv5-e100-train.onnx"` | Path where ONNX model is located                         |
+  | `--model "./deploy/y11m-dv6-e25-im1280.onnx"`      | Path where ONNX model is located                         |
   | `--video VIDEO`                                    | Path where video file is located                         |
   | `--image IMAGE`                                    | Path where image file is located (Not in use for videos) |
   | `--out-suffix "v03.result"`                        | Result filename suffix                                   |
@@ -45,7 +45,9 @@
 #### 3. Run inference 
 (a.) Image model inference on a sample image in deploy folder
 ```bash
-time python yolo_infer.py --view-debug --image "./deploy/frame_000830.PNG"
+time python yolo_infer.py --view-debug --model "./deploy/y11m-dv6-e25-im1280.onnx" --out-path "./results-y11m-dv6-e25-im1280" --image "./deploy/frame_000830.PNG"
+## Alternate model use
+time python yolo_infer.py --view-debug --model "./deploy/y11l-dv6-e25-im1280.onnx" --out-path "./results-y11l-dv6-e25-im1280" --image "./deploy/frame_000830.PNG"
 ```
 - expected output at [./results/frame_000830.PNG.v02.result.jpg](./results/frame_000830.PNG.v02.result.jpg)
   ```log
@@ -60,7 +62,10 @@ time python yolo_infer.py --view-debug --image "./deploy/frame_000830.PNG"
 (b.) Video model inference on a frame by frame basis for a sample video in deploy folder
 ```bash
 cd ~/manacus-dynamics/inference/ul
-time python yolo_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
+
+time python yolo_infer.py --view-debug --model "./deploy/y11m-dv6-e25-im1280.onnx" --out-path "./results-y11m-dv6-e25-im1280" --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
+## Alternate model use
+time python yolo_infer.py --view-debug --model "./deploy/y11l-dv6-e25-im1280.onnx" --out-path "./results-y11l-dv6-e25-im1280" --video "./deploy/LM.P4_1.8.22-1.13.22_0127.MP4"
 ```
 - expected output at [./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv](./results/LM.P4_1.8.22-1.13.22_0127.MP4.v02.result.csv)
   ```log
@@ -74,7 +79,7 @@ time python yolo_infer.py --view-debug --video "./deploy/LM.P4_1.8.22-1.13.22_01
   sys     1m12.294s
   ```
 (c.) Run inference on multiple videos using a bash script
-- Prepare video list and run bash script
+- Prepare video list and run bash script with the respective model weights
 ```bash
 TEST_VIDEOS_PATH="/home/rahul/workspace/vision/manacus-dynamics/dataset/fcat/box/test_videos"
 find ${TEST_VIDEOS_PATH} -type f > run_batch_test_videos.list
